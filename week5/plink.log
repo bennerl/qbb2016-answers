@@ -1,0 +1,112 @@
+PLINK v1.90b3 64-bit (11 Jan 2015)
+7 arguments: --all-pheno --allow-no-sex --assoc --pheno pheno.txt --vcf BYxRM_GenoData.vcf
+Hostname: bio-cmdb-14.local
+Working directory: /Users/cmdb/qbb2016-answers/week5
+Start time: Sun Oct  9 05:40:12 2016
+
+Random number seed: 1476006012
+4096 MB RAM detected; reserving 2048 MB for main workspace.
+--vcf: plink-temporary.bed + plink-temporary.bim + plink-temporary.fam written.
+11623 variants loaded from .bim file.
+1008 people (0 males, 0 females, 1008 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to plink.nosex .
+799 phenotype values present after --pheno.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1008 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+11623 variants and 1008 people pass filters and QC.
+Phenotype data is quantitative.
+799 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Cadmium_Chloride.qassoc ... done.
+1004 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Caffeine.qassoc ... done.
+949 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Calcium_Chloride.qassoc ... done.
+990 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Cisplatin.qassoc ... done.
+1007 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Cobalt_Chloride.qassoc ... done.
+979 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Congo_red.qassoc ... done.
+972 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Copper.qassoc ... done.
+1004 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Cycloheximide.qassoc ... done.
+1003 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Diamide.qassoc ... done.
+1005 phenotype values present after --pheno.
+Writing QT --assoc report to plink.E6_Berbamine.qassoc ... done.
+967 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Ethanol.qassoc ... done.
+999 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Formamide.qassoc ... done.
+962 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Galactose.qassoc ... done.
+769 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Hydrogen_Peroxide.qassoc ... done.
+960 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Hydroquinone.qassoc ... done.
+944 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Hydroxyurea.qassoc ... done.
+994 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Indoleacetic_Acid.qassoc ... done.
+973 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Lactate.qassoc ... done.
+1004 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Lactose.qassoc ... done.
+1002 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Lithium_Chloride.qassoc ... done.
+964 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Magnesium_Chloride.qassoc ... done.
+1006 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Magnesium_Sulfate.qassoc ... done.
+1005 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Maltose.qassoc ... done.
+957 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Mannose.qassoc ... done.
+1005 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Menadione.qassoc ... done.
+1005 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Neomycin.qassoc ... done.
+1004 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Paraquat.qassoc ... done.
+662 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Raffinose.qassoc ... done.
+873 phenotype values present after --pheno.
+Writing QT --assoc report to plink.SDS.qassoc ... done.
+599 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Sorbitol.qassoc ... done.
+1003 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Trehalose.qassoc ... done.
+1006 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Tunicamycin.qassoc ... done.
+964 phenotype values present after --pheno.
+Writing QT --assoc report to plink.x4-Hydroxybenzaldehyde.qassoc ... done.
+1005 phenotype values present after --pheno.
+Writing QT --assoc report to plink.x4NQO.qassoc ... done.
+957 phenotype values present after --pheno.
+Writing QT --assoc report to plink.x5-Fluorocytosine.qassoc ... done.
+992 phenotype values present after --pheno.
+Writing QT --assoc report to plink.x5-Fluorouracil.qassoc ... done.
+1001 phenotype values present after --pheno.
+Writing QT --assoc report to plink.x6-Azauracil.qassoc ... done.
+1003 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Xylose.qassoc ... done.
+1006 phenotype values present after --pheno.
+Writing QT --assoc report to plink.YNB.qassoc ... done.
+979 phenotype values present after --pheno.
+Writing QT --assoc report to plink.YNB:ph3.qassoc ... done.
+887 phenotype values present after --pheno.
+Writing QT --assoc report to plink.YNB:ph8.qassoc ... done.
+1006 phenotype values present after --pheno.
+Writing QT --assoc report to plink.YPD.qassoc ... done.
+1005 phenotype values present after --pheno.
+Writing QT --assoc report to plink.YPD:15C.qassoc ... done.
+1003 phenotype values present after --pheno.
+Writing QT --assoc report to plink.YPD:37C.qassoc ... done.
+806 phenotype values present after --pheno.
+Writing QT --assoc report to plink.YPD:4C.qassoc ... done.
+957 phenotype values present after --pheno.
+Writing QT --assoc report to plink.Zeocin.qassoc ... done.
+
+End time: Sun Oct  9 05:40:16 2016

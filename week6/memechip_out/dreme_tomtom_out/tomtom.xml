@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!DOCTYPE tomtom[
+<!ELEMENT tomtom (model, targets, queries, runtime)>
+<!ATTLIST tomtom version CDATA #REQUIRED release CDATA #REQUIRED>
+<!ELEMENT model (command_line, distance_measure, threshold, background, host, when)>
+<!ELEMENT command_line (#PCDATA)>
+<!ELEMENT distance_measure EMPTY>
+<!ATTLIST distance_measure value (allr|blic1|blic5|ed|kullback|llr1|llr5|pearson|sandelin) #REQUIRED>
+<!ELEMENT threshold (#PCDATA)>
+<!ATTLIST threshold type (evalue|qvalue) #REQUIRED>
+<!ELEMENT background EMPTY>
+<!ATTLIST background from (first_target|file) #REQUIRED A CDATA #REQUIRED C CDATA #REQUIRED G CDATA #REQUIRED T CDATA #REQUIRED file CDATA #IMPLIED>
+<!ELEMENT host (#PCDATA)>
+<!ELEMENT when (#PCDATA)>
+<!-- each target is listed in order that the target was specified to the command line
+     the motifs are not listed in any particular order -->
+<!ELEMENT targets (target_file*)>
+<!ELEMENT target_file (motif*)>
+<!ATTLIST target_file index CDATA #REQUIRED source CDATA #REQUIRED name CDATA #REQUIRED 
+  loaded CDATA #REQUIRED excluded CDATA #REQUIRED last_mod_date CDATA #REQUIRED>
+<!-- currently there can only be one query file (but users should not assume this will always be true)
+     the query motifs are specified in the order that they appear in the file
+     the matches are ordered from best to worst -->
+<!ELEMENT queries (query_file*)>
+<!ELEMENT query_file (query*)>
+<!ATTLIST query_file source CDATA #REQUIRED name CDATA #REQUIRED last_mod_date CDATA #REQUIRED>
+<!ELEMENT query (motif,match*)>
+<!ELEMENT match EMPTY>
+<!ATTLIST match target IDREF #REQUIRED orientation (forward|reverse) "forward" 
+  offset CDATA #REQUIRED pvalue CDATA #REQUIRED evalue CDATA #REQUIRED qvalue CDATA #REQUIRED>
+<!-- motif contains the probability of each of the nucleotide bases at each position;
+     i starts at 1; A, C, G and T are probabilities that sum to 1 -->
+<!ELEMENT motif (pos*)>
+<!ATTLIST motif id ID #REQUIRED name CDATA #REQUIRED alt CDATA #IMPLIED length CDATA #REQUIRED 
+  nsites CDATA #IMPLIED evalue CDATA #IMPLIED url CDATA #IMPLIED>
+<!ELEMENT pos EMPTY>
+<!ATTLIST pos i CDATA #REQUIRED A CDATA #REQUIRED C CDATA #REQUIRED G CDATA #REQUIRED T CDATA #REQUIRED>
+<!ELEMENT runtime EMPTY>
+<!ATTLIST runtime cycles CDATA #REQUIRED seconds CDATA #REQUIRED>
+]>
+<tomtom version="4.10.1" release="Wed Mar 25 11:40:43 2015 +1000">
+	<model>
+		<command_line>tomtom -verbosity 1 -oc memechip_out/dreme_tomtom_out -min-overlap 5 -dist pearson -evalue -thresh 1 -no-ssc -bfile memechip_out/background memechip_out/dreme_out/dreme.xml motif_databases/JASPAR/JASPAR_CORE_2016.meme</command_line>
+		<distance_measure value="pearson"/>
+		<threshold type="evalue">1</threshold>
+		<background from="file" A="0.2614" C="0.2386" G="0.2386" T="0.2614" file="memechip_out/background"/>
+		<host>bio-cmdb-14.local</host>
+		<when>Fri Oct 14 18:04:10 2016</when>
+	</model>
+	<targets>
+		<target_file index="1" source="motif_databases/JASPAR/JASPAR_CORE_2016.meme" name="JASPAR_CORE_2016.meme" loaded="1082" excluded="0" last_mod_date="Wed Sep 14 14:58:14 2016">
+			<motif id="t_1_MA0139.1" name="MA0139.1" alt="CTCF" length="19" evalue="0.0e+000" nsites="911" url="http://jaspar.genereg.net?ID=MA0139.1&amp;rm=present&amp;collection=CORE">
+				<pos i="1" A="0.09529" C="0.318729" G="0.083242" T="0.502738"/>
+				<pos i="2" A="0.182913" C="0.158817" G="0.45345" T="0.204819"/>
+				<pos i="3" A="0.307777" C="0.053669" G="0.491785" T="0.146769"/>
+				<pos i="4" A="0.061336" C="0.876232" G="0.023001" T="0.03943"/>
+				<pos i="5" A="0.008762" C="0.989047" G="0" T="0.002191"/>
+				<pos i="6" A="0.814896" C="0.014239" G="0.071194" T="0.099671"/>
+				<pos i="7" A="0.043812" C="0.578313" G="0.365827" T="0.012048"/>
+				<pos i="8" A="0.117325" C="0.474781" G="0.052632" T="0.355263"/>
+				<pos i="9" A="0.933114" C="0.012061" G="0.035088" T="0.019737"/>
+				<pos i="10" A="0.005488" C="0" G="0.991218" T="0.003293"/>
+				<pos i="11" A="0.365532" C="0.003293" G="0.621295" T="0.009879"/>
+				<pos i="12" A="0.059276" C="0.013172" G="0.553238" T="0.374314"/>
+				<pos i="13" A="0.013187" C="0" G="0.978022" T="0.008791"/>
+				<pos i="14" A="0.061538" C="0.008791" G="0.851648" T="0.078022"/>
+				<pos i="15" A="0.114411" C="0.806381" G="0.005501" T="0.073707"/>
+				<pos i="16" A="0.409241" C="0.014301" G="0.557756" T="0.018702"/>
+				<pos i="17" A="0.090308" C="0.530837" G="0.338106" T="0.040749"/>
+				<pos i="18" A="0.128855" C="0.354626" G="0.080396" T="0.436123"/>
+				<pos i="19" A="0.442731" C="0.199339" G="0.292952" T="0.064978"/>
+			</motif>
+			<motif id="t_1_MA0205.1" name="MA0205.1" alt="Trl" length="10" evalue="0.0e+000" nsites="71" url="http://jaspar.genereg.net?ID=MA0205.1&amp;rm=present&amp;collection=CORE">
+				<pos i="1" A="0.056338" C="0.309859" G="0.126761" T="0.507042"/>
+				<pos i="2" A="0.084507" C="0.323944" G="0.15493" T="0.43662"/>
+				<pos i="3" A="0.169014" C="0.084507" G="0.422535" T="0.323944"/>
+				<pos i="4" A="0" C="0.901408" G="0.042254" T="0.056338"/>
+				<pos i="5" A="0.042254" C="0" G="0.197183" T="0.760563"/>
+				<pos i="6" A="0.014085" C="0.985915" G="0" T="0"/>
+				<pos i="7" A="0.183099" C="0" G="0.028169" T="0.788732"/>
+				<pos i="8" A="0.070423" C="0.760563" G="0.098592" T="0.070423"/>
+				<pos i="9" A="0.098592" C="0.183099" G="0.15493" T="0.56338"/>
+				<pos i="10" A="0.126761" C="0.464789" G="0.140845" T="0.267606"/>
+			</motif>
+		</target_file>
+	</targets>
+	<queries>
+		<query_file source="memechip_out/dreme_out/dreme.xml" name="dreme.xml" last_mod_date="Fri Oct 14 18:03:58 2016">
+			<query>
+				<motif id="q_AGAGGGCR" name="AGAGGGCR" alt="DREME" length="8" evalue="2.4e-004" nsites="28" >
+					<pos i="1" A="1" C="0" G="0" T="0"/>
+					<pos i="2" A="0" C="0" G="1" T="0"/>
+					<pos i="3" A="1" C="0" G="0" T="0"/>
+					<pos i="4" A="0" C="0" G="1" T="0"/>
+					<pos i="5" A="0" C="0" G="1" T="0"/>
+					<pos i="6" A="0" C="0" G="1" T="0"/>
+					<pos i="7" A="0" C="1" G="0" T="0"/>
+					<pos i="8" A="0.607143" C="0" G="0.392857" T="0"/>
+				</motif>
+				<match target="t_1_MA0139.1" orientation="forward" offset="8" pvalue="0.000518693" evalue="0.561225" qvalue="0.530231"/>
+				<match target="t_1_MA0205.1" orientation="reverse" offset="1" pvalue="0.000854639" evalue="0.924719" qvalue="0.530231"/>
+			</query>
+		</query_file>
+	</queries>
+	<runtime cycles="746292" seconds="0.746"/>
+</tomtom>

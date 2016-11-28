@@ -1,0 +1,10 @@
+element a: validity error : ID occurrences_chr19_3619444_3619796 already defined
+element a: validity error : ID occurrences_chr19_18588213_18588720 already defined
+element a: validity error : ID occurrences_chr19_42655119_42655416 already defined
+element a: validity error : ID occurrences_chr19_58469449_58469802 already defined
+element a: validity error : ID occurrences_chr19_4478116_4478576 already defined
+element a: validity error : ID occurrences_chr19_5428066_5428533 already defined
+element a: validity error : ID occurrences_chr19_31046575_31047003 already defined
+element a: validity error : ID occurrences_chr19_5998161_5998529 already defined
+element a: validity error : ID occurrences_chr19_46329912_46330431 already defined
+element a: validity error : ID occurrences_chr19_53007954_53008317 already defined

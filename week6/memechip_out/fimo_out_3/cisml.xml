@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="fimo-to-html.xsl"?>
+<!-- Begin document body -->
+<cis-element-search
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://zlab.bu.edu/schema/cisml cisml.xsd"
+  xmlns="http://zlab.bu.edu/schema/cisml"
+  xmlns:mem="http://noble.gs.washington.edu/meme"
+>
+<program-name>fimo</program-name>
+<parameters>
+<pattern-file>memechip_out/meme_out/meme.xml</pattern-file>
+<sequence-file>memechip_out/ER4_G1E_100.fasta</sequence-file>
+<site-pvalue-cutoff>0.0001</site-pvalue-cutoff>
+<sequence-filtering on-off="off"/>
+</parameters>
+<pattern accession="3" name="3">
+<scanned-sequence accession="chr19_4169406_4169891" name="chr19_4169406_4169891">
+</scanned-sequence>
+<scanned-sequence accession="chr19_9110209_9110746" name="chr19_9110209_9110746">
+</scanned-sequence>
+<scanned-sequence accession="chr19_43760441_43761020" name="chr19_43760441_43761020">
+</scanned-sequence>
+<scanned-sequence accession="chr19_41844285_41844829" name="chr19_41844285_41844829">
+</scanned-sequence>
+<scanned-sequence accession="chr19_4628807_4629244" name="chr19_4628807_4629244">
+</scanned-sequence>
+<scanned-sequence accession="chr19_46329912_46330431" name="chr19_46329912_46330431">
+<matched-element start="176" stop="162" score="2.88182" pvalue="9.41e-05">
+<sequence>ATGGTGATGCTAGGT</sequence>
+<mem:qvalue>0.256</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_8976555_8977035" name="chr19_8976555_8977035">
+<matched-element start="221" stop="207" score="4.06364" pvalue="6.73e-05">
+<sequence>AGGTGGTGGCTAAGA</sequence>
+<mem:qvalue>0.202</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_8695312_8695823" name="chr19_8695312_8695823">
+</scanned-sequence>
+<scanned-sequence accession="chr19_46338593_46339036" name="chr19_46338593_46339036">
+</scanned-sequence>
+<scanned-sequence accession="chr19_23151583_23151998" name="chr19_23151583_23151998">
+</scanned-sequence>
+<scanned-sequence accession="chr19_3208234_3208722" name="chr19_3208234_3208722">
+</scanned-sequence>
+<scanned-sequence accession="chr19_47264244_47264737" name="chr19_47264244_47264737">
+</scanned-sequence>
+<scanned-sequence accession="chr19_41086522_41087132" name="chr19_41086522_41087132">
+</scanned-sequence>
+<scanned-sequence accession="chr19_52922938_52923424" name="chr19_52922938_52923424">
+</scanned-sequence>
+<scanned-sequence accession="chr19_46275219_46275691" name="chr19_46275219_46275691">
+</scanned-sequence>
+<scanned-sequence accession="chr19_6376187_6376651" name="chr19_6376187_6376651">
+</scanned-sequence>
+<scanned-sequence accession="chr19_4135999_4136357" name="chr19_4135999_4136357">
+</scanned-sequence>
+<scanned-sequence accession="chr19_56566105_56566485" name="chr19_56566105_56566485">
+</scanned-sequence>
+<scanned-sequence accession="chr19_45544984_45545461" name="chr19_45544984_45545461">
+</scanned-sequence>
+<scanned-sequence accession="chr19_54044373_54044845" name="chr19_54044373_54044845">
+</scanned-sequence>
+<scanned-sequence accession="chr19_57325700_57326178" name="chr19_57325700_57326178">
+</scanned-sequence>
+<scanned-sequence accession="chr19_5428066_5428533" name="chr19_5428066_5428533">
+<matched-element start="178" stop="164" score="13.5909" pvalue="2.11e-06">
+<sequence>ATGTGAATTCTGGGA</sequence>
+<mem:qvalue>0.0117</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_8857681_8858139" name="chr19_8857681_8858139">
+<matched-element start="15" stop="29" score="25.9364" pvalue="2.55e-09">
+<sequence>ATGTGGGTGCTGGAA</sequence>
+<mem:qvalue>6.63e-05</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_23860322_23860753" name="chr19_23860322_23860753">
+</scanned-sequence>
+<scanned-sequence accession="chr19_27683386_27683809" name="chr19_27683386_27683809">
+<matched-element start="197" stop="183" score="20.7091" pvalue="8.34e-08">
+<sequence>AGGTGATTGCTGGGA</sequence>
+<mem:qvalue>0.000722</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_50185084_50185718" name="chr19_50185084_50185718">
+</scanned-sequence>
+<scanned-sequence accession="chr19_11611444_11611789" name="chr19_11611444_11611789">
+<matched-element start="47" stop="61" score="6.57273" pvalue="3.04e-05">
+<sequence>ATTTTGGTGCTGGAT</sequence>
+<mem:qvalue>0.108</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_59418011_59418483" name="chr19_59418011_59418483">
+</scanned-sequence>
+<scanned-sequence accession="chr19_58469449_58469802" name="chr19_58469449_58469802">
+</scanned-sequence>
+<scanned-sequence accession="chr19_57876141_57876506" name="chr19_57876141_57876506">
+<matched-element start="174" stop="188" score="23.0273" pvalue="2.64e-08">
+<sequence>ATGTAGGTGCTGGAA</sequence>
+<mem:qvalue>0.000294</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_42429371_42429777" name="chr19_42429371_42429777">
+<matched-element start="75" stop="89" score="4.07273" pvalue="6.64e-05">
+<sequence>ATGTGGTGGAAGGGT</sequence>
+<mem:qvalue>0.202</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_32501437_32501838" name="chr19_32501437_32501838">
+</scanned-sequence>
+<scanned-sequence accession="chr19_60310582_60310988" name="chr19_60310582_60310988">
+</scanned-sequence>
+<scanned-sequence accession="chr19_57816563_57816991" name="chr19_57816563_57816991">
+<matched-element start="297" stop="311" score="10.1545" pvalue="7.72e-06">
+<sequence>ATATGGGTGCAGGGA</sequence>
+<mem:qvalue>0.0354</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_10204508_10204982" name="chr19_10204508_10204982">
+</scanned-sequence>
+<scanned-sequence accession="chr19_18588213_18588720" name="chr19_18588213_18588720">
+<matched-element start="186" stop="172" score="18.2" pvalue="2.69e-07">
+<sequence>ATGAGGTTGCTGGGA</sequence>
+<mem:qvalue>0.00191</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_4255744_4256077" name="chr19_4255744_4256077">
+<matched-element start="212" stop="198" score="26.2636" pvalue="1.68e-09">
+<sequence>ATGTGGTTGCTGGGA</sequence>
+<mem:qvalue>6.53e-05</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_58886379_58886830" name="chr19_58886379_58886830">
+</scanned-sequence>
+<scanned-sequence accession="chr19_7068024_7068469" name="chr19_7068024_7068469">
+</scanned-sequence>
+<scanned-sequence accession="chr19_10100744_10101169" name="chr19_10100744_10101169">
+</scanned-sequence>
+<scanned-sequence accession="chr19_6276568_6276927" name="chr19_6276568_6276927">
+</scanned-sequence>
+<scanned-sequence accession="chr19_61097780_61098206" name="chr19_61097780_61098206">
+</scanned-sequence>
+<scanned-sequence accession="chr19_4478116_4478576" name="chr19_4478116_4478576">
+</scanned-sequence>
+<scanned-sequence accession="chr19_41803459_41803825" name="chr19_41803459_41803825">
+</scanned-sequence>
+<scanned-sequence accession="chr19_16557918_16558366" name="chr19_16557918_16558366">
+<matched-element start="205" stop="191" score="18.3364" pvalue="2.49e-07">
+<sequence>ATGGGGGTGATAGGA</sequence>
+<mem:qvalue>0.00191</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_10182551_10182901" name="chr19_10182551_10182901">
+</scanned-sequence>
+<scanned-sequence accession="chr19_53007954_53008317" name="chr19_53007954_53008317">
+<matched-element start="203" stop="217" score="10.8909" pvalue="6.17e-06">
+<sequence>CTGTAGCTGCTGGGT</sequence>
+<mem:qvalue>0.032</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_46055875_46056446" name="chr19_46055875_46056446">
+</scanned-sequence>
+<scanned-sequence accession="chr19_46538159_46538566" name="chr19_46538159_46538566">
+</scanned-sequence>
+<scanned-sequence accession="chr19_32954300_32954665" name="chr19_32954300_32954665">
+</scanned-sequence>
+<scanned-sequence accession="chr19_16784928_16785355" name="chr19_16784928_16785355">
+<matched-element start="226" stop="212" score="3.25455" pvalue="8.66e-05">
+<sequence>AGGTGATTGCTTCAA</sequence>
+<mem:qvalue>0.25</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_43675281_43675642" name="chr19_43675281_43675642">
+</scanned-sequence>
+<scanned-sequence accession="chr19_42661449_42661787" name="chr19_42661449_42661787">
+</scanned-sequence>
+<scanned-sequence accession="chr19_33978983_33979412" name="chr19_33978983_33979412">
+</scanned-sequence>
+<scanned-sequence accession="chr19_25445007_25445414" name="chr19_25445007_25445414">
+</scanned-sequence>
+<scanned-sequence accession="chr19_58911386_58911812" name="chr19_58911386_58911812">
+</scanned-sequence>
+<scanned-sequence accession="chr19_31046575_31047003" name="chr19_31046575_31047003">
+</scanned-sequence>
+<scanned-sequence accession="chr19_15866887_15867284" name="chr19_15866887_15867284">
+</scanned-sequence>
+<scanned-sequence accession="chr19_10266500_10266841" name="chr19_10266500_10266841">
+</scanned-sequence>
+<scanned-sequence accession="chr19_25628453_25628842" name="chr19_25628453_25628842">
+</scanned-sequence>
+<scanned-sequence accession="chr19_18712899_18713212" name="chr19_18712899_18713212">
+</scanned-sequence>
+<scanned-sequence accession="chr19_45116769_45117129" name="chr19_45116769_45117129">
+</scanned-sequence>
+<scanned-sequence accession="chr19_43961284_43961613" name="chr19_43961284_43961613">
+<matched-element start="62" stop="48" score="9.48182" pvalue="1.08e-05">
+<sequence>ATGTGGGCACTGGAA</sequence>
+<mem:qvalue>0.0443</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_22915722_22916153" name="chr19_22915722_22916153">
+</scanned-sequence>
+<scanned-sequence accession="chr19_30827884_30828199" name="chr19_30827884_30828199">
+<matched-element start="194" stop="208" score="23.9636" pvalue="7.45e-09">
+<sequence>ATGTGGCTGCTGGAA</sequence>
+<mem:qvalue>0.000116</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_3619444_3619796" name="chr19_3619444_3619796">
+<matched-element start="156" stop="170" score="26.8" pvalue="8e-10">
+<sequence>ATGTGGGTGCTGGGA</sequence>
+<mem:qvalue>6.23e-05</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_53821203_53821556" name="chr19_53821203_53821556">
+</scanned-sequence>
+<scanned-sequence accession="chr19_5348715_5349116" name="chr19_5348715_5349116">
+</scanned-sequence>
+<scanned-sequence accession="chr19_46857606_46858092" name="chr19_46857606_46858092">
+</scanned-sequence>
+<scanned-sequence accession="chr19_46502696_46503042" name="chr19_46502696_46503042">
+</scanned-sequence>
+<scanned-sequence accession="chr19_41258729_41259037" name="chr19_41258729_41259037">
+</scanned-sequence>
+<scanned-sequence accession="chr19_25451275_25451737" name="chr19_25451275_25451737">
+</scanned-sequence>
+<scanned-sequence accession="chr19_20344925_20345232" name="chr19_20344925_20345232">
+</scanned-sequence>
+<scanned-sequence accession="chr19_17388401_17388861" name="chr19_17388401_17388861">
+</scanned-sequence>
+<scanned-sequence accession="chr19_37209720_37210136" name="chr19_37209720_37210136">
+<matched-element start="334" stop="320" score="18.0636" pvalue="3.04e-07">
+<sequence>ATGTGGTTGTTGGGA</sequence>
+<mem:qvalue>0.00197</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_5998161_5998529" name="chr19_5998161_5998529">
+</scanned-sequence>
+<scanned-sequence accession="chr19_17323236_17323570" name="chr19_17323236_17323570">
+</scanned-sequence>
+<scanned-sequence accession="chr19_42655119_42655416" name="chr19_42655119_42655416">
+<matched-element start="116" stop="102" score="5.46364" pvalue="4.11e-05">
+<sequence>AGGAGAGTGCTGGTA</sequence>
+<mem:qvalue>0.139</mem:qvalue>
+</matched-element>
+<matched-element start="293" stop="279" score="4.39091" pvalue="5.94e-05">
+<sequence>AGGTGGTCTCTGGGG</sequence>
+<mem:qvalue>0.193</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_56351982_56352320" name="chr19_56351982_56352320">
+<matched-element start="253" stop="267" score="15.8273" pvalue="7.19e-07">
+<sequence>ACGTGGGTGCTAGGA</sequence>
+<mem:qvalue>0.00431</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_41952386_41952784" name="chr19_41952386_41952784">
+<matched-element start="346" stop="360" score="23.8909" pvalue="1.18e-08">
+<sequence>ATGTGGGTTCTGGGA</sequence>
+<mem:qvalue>0.000154</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_6334625_6334992" name="chr19_6334625_6334992">
+<matched-element start="202" stop="188" score="2.69091" pvalue="9.85e-05">
+<sequence>CCGTGACTTCTGGGA</sequence>
+<mem:qvalue>0.256</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_58627892_58628198" name="chr19_58627892_58628198">
+</scanned-sequence>
+<scanned-sequence accession="chr19_57692562_57692857" name="chr19_57692562_57692857">
+</scanned-sequence>
+<scanned-sequence accession="chr19_5129782_5130077" name="chr19_5129782_5130077">
+<matched-element start="154" stop="140" score="25.4" pvalue="3.51e-09">
+<sequence>ATGTGGTTGCTGGAA</sequence>
+<mem:qvalue>6.84e-05</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_5087702_5088016" name="chr19_5087702_5088016">
+</scanned-sequence>
+<scanned-sequence accession="chr19_36883233_36883534" name="chr19_36883233_36883534">
+<matched-element start="129" stop="115" score="21.1182" pvalue="5.8e-08">
+<sequence>ATGTGGGTTCTGGGT</sequence>
+<mem:qvalue>0.000564</mem:qvalue>
+</matched-element>
+<matched-element start="281" stop="267" score="9.86364" pvalue="9.16e-06">
+<sequence>ATGTGGTTAGTGGGA</sequence>
+<mem:qvalue>0.0396</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_34483574_34483902" name="chr19_34483574_34483902">
+</scanned-sequence>
+<scanned-sequence accession="chr19_32448781_32449102" name="chr19_32448781_32449102">
+</scanned-sequence>
+<scanned-sequence accession="chr19_23225040_23225438" name="chr19_23225040_23225438">
+</scanned-sequence>
+<scanned-sequence accession="chr19_16358892_16359283" name="chr19_16358892_16359283">
+<matched-element start="358" stop="372" score="2.74545" pvalue="9.71e-05">
+<sequence>ATGGGGATCATAGGA</sequence>
+<mem:qvalue>0.256</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_13981198_13981499" name="chr19_13981198_13981499">
+</scanned-sequence>
+<scanned-sequence accession="chr19_24705386_24705742" name="chr19_24705386_24705742">
+</scanned-sequence>
+<scanned-sequence accession="chr19_23015563_23015888" name="chr19_23015563_23015888">
+</scanned-sequence>
+<scanned-sequence accession="chr19_20764238_20764544" name="chr19_20764238_20764544">
+</scanned-sequence>
+<scanned-sequence accession="chr19_53394536_53394831" name="chr19_53394536_53394831">
+</scanned-sequence>
+<scanned-sequence accession="chr19_4279540_4279835" name="chr19_4279540_4279835">
+<matched-element start="98" stop="84" score="7.43636" pvalue="2.06e-05">
+<sequence>ATGTAGGTCCAGGGA</sequence>
+<mem:qvalue>0.0763</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_45012543_45012878" name="chr19_45012543_45012878">
+</scanned-sequence>
+<scanned-sequence accession="chr19_34772859_34773201" name="chr19_34772859_34773201">
+</scanned-sequence>
+<scanned-sequence accession="chr19_27693649_27694183" name="chr19_27693649_27694183">
+<matched-element start="447" stop="461" score="10.2182" pvalue="7.43e-06">
+<sequence>ATGGGGGTGAGGGGT</sequence>
+<mem:qvalue>0.0354</mem:qvalue>
+</matched-element>
+<matched-element start="205" stop="191" score="7.56364" pvalue="1.91e-05">
+<sequence>ATAGGGGTGGTGGGA</sequence>
+<mem:qvalue>0.0744</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="chr19_45846995_45847290" name="chr19_45846995_45847290">
+</scanned-sequence>
+</pattern>
+</cis-element-search>

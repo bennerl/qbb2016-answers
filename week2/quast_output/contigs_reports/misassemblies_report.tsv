@@ -1,0 +1,13 @@
+Assembly	contigs_spades_high	contigs_spades_low	contigs_velvet_high	contigs_velvet_low
+# misassemblies	0	1	0	0
+    # relocations	0	1	0	0
+    # translocations	0	0	0	0
+    # inversions	0	0	0	0
+# misassembled contigs	0	1	0	0
+Misassembled contigs length	0	1084	0	0
+# local misassemblies	0	0	0	0
+# mismatches	0	5	0	0
+# indels	0	0	0	0
+    # short indels	0	0	0	0
+    # long indels	0	0	0	0
+Indels length	0	0	0	0

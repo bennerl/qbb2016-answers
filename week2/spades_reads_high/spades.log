@@ -1,0 +1,623 @@
+Command line: /usr/local/bin/spades.py	-o	/Users/cmdb/qbb2016-answers/week2/spades_reads_high	--only-assembler	-1	/Users/cmdb/qbb2016-answers/week2/reads_1.fastq	-2	/Users/cmdb/qbb2016-answers/week2/reads_2.fastq	
+
+System information:
+  SPAdes version: 3.9.0
+  Python version: 2.7.12
+  OS: Darwin-15.6.0-x86_64-i386-64bit
+
+Output dir: /Users/cmdb/qbb2016-answers/week2/spades_reads_high
+Mode: ONLY assembling (without read error correction)
+Debug mode is turned OFF
+
+Dataset parameters:
+  Multi-cell mode (you should set '--sc' flag if input data was obtained with MDA (single-cell) technology or --meta flag if processing metagenomic dataset)
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/Users/cmdb/qbb2016-answers/week2/reads_1.fastq']
+      right reads: ['/Users/cmdb/qbb2016-answers/week2/reads_2.fastq']
+      interlaced reads: not specified
+      single reads: not specified
+Assembly parameters:
+  k: automatic selection based on read length
+  Repeat resolution is enabled
+  Mismatch careful mode is turned OFF
+  MismatchCorrector will be SKIPPED
+  Coverage cutoff is turned OFF
+Other parameters:
+  Dir for temp files: /Users/cmdb/qbb2016-answers/week2/spades_reads_high/tmp
+  Threads: 16
+  Memory limit (in Gb): 250
+
+
+======= SPAdes pipeline started. Log can be found here: /Users/cmdb/qbb2016-answers/week2/spades_reads_high/spades.log
+
+
+===== Assembling started.
+
+
+== Running assembler: K21
+
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  75)   Loading config from /Users/cmdb/qbb2016-answers/week2/spades_reads_high/K21/configs/config.info
+  0:00:00.000     4M / 4M    INFO    General                 (memory_limit.hpp          :  47)   Memory limit set to 250 Gb
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  88)   Starting SPAdes, built from N/A, git revision N/A
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  89)   Maximum k-mer length: 128
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  90)   Assembling dataset (/Users/cmdb/qbb2016-answers/week2/spades_reads_high/dataset.info) with K=21
+  0:00:00.000     4M / 4M    INFO    General                 (launch.hpp                :  29)   SPAdes started
+  0:00:00.000     4M / 4M    INFO    General                 (launch.hpp                :  36)   Starting from stage: construction
+  0:00:00.000     4M / 4M    INFO    General                 (launch.hpp                :  39)   Two-step RR enabled: 0
+  0:00:00.001     4M / 4M    INFO   StageManager             (stage.cpp                 : 126)   STAGE == Construction
+  0:00:00.002     4M / 4M    INFO    General                 (read_converter.hpp        :  78)   Converting reads to binary format for library #0 (takes a while)
+  0:00:00.002     4M / 4M    INFO    General                 (read_converter.hpp        :  79)   Converting paired reads
+  0:00:00.245    76M / 84M   INFO    General                 (binary_converter.hpp      : 139)   16384 reads processed
+  0:00:00.392    80M / 84M   INFO    General                 (binary_converter.hpp      : 139)   32768 reads processed
+  0:00:00.671    96M / 96M   INFO    General                 (binary_converter.hpp      : 139)   65536 reads processed
+  0:00:01.224   128M / 128M  INFO    General                 (binary_converter.hpp      : 139)   131072 reads processed
+  0:00:02.347   188M / 188M  INFO    General                 (binary_converter.hpp      : 139)   262144 reads processed
+  0:00:03.289   208M / 208M  INFO    General                 (binary_converter.hpp      : 159)   306174 reads written
+  0:00:03.560     4M / 208M  INFO    General                 (read_converter.hpp        :  88)   Converting single reads
+  0:00:03.724   132M / 208M  INFO    General                 (binary_converter.hpp      : 159)   0 reads written
+  0:00:03.820     4M / 208M  INFO    General                 (graph_construction.hpp    : 120)   Constructing DeBruijn graph for k=21
+  0:00:03.820     4M / 208M  INFO    General                 (kmer_splitters.hpp        : 130)   Splitting kmer instances into 16 buckets. This might take a while.
+  0:00:03.820     4M / 208M  INFO    General                 (file_limit.hpp            :  30)   Open file limit set to 256
+  0:00:03.820     4M / 208M  INFO    General                 (kmer_index_builder.hpp    : 105)   Memory available for splitting buffers: 20.833 Gb
+  0:00:03.820     4M / 208M  INFO    General                 (kmer_index_builder.hpp    : 113)   Using cell size of 4194304
+  0:00:09.926     2G / 2G    INFO    General                 (kmer_splitters.hpp        : 154)   Processed 1224696 reads
+  0:00:09.926     2G / 2G    INFO    General                 (kmer_splitters.hpp        : 160)   Adding contigs from previous K
+  0:00:09.926     2G / 2G    INFO    General                 (kmer_splitters.hpp        : 171)   Used 1224696 reads. Maximum read length 100
+  0:00:09.926     2G / 2G    INFO    General                 (kmer_splitters.hpp        : 172)   Average read length 91.2303
+  0:00:09.926     2G / 2G    INFO    General                 (kmer_index_builder.hpp    : 232)   Starting k-mer counting.
+  0:00:09.935     2G / 2G    INFO    General                 (kmer_index_builder.hpp    : 238)   K-mer counting done. There are 101311 kmers in total.
+  0:00:09.935     2G / 2G    INFO    General                 (kmer_index_builder.hpp    : 240)   Merging temporary buckets.
+  0:00:10.021     2G / 2G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 346)   Building kmer index
+  0:00:10.021     2G / 2G    INFO    General                 (kmer_splitters.hpp        : 282)   Splitting kmer instances into 64 buckets. This might take a while.
+  0:00:10.022     2G / 2G    INFO    General                 (file_limit.hpp            :  30)   Open file limit set to 256
+  0:00:10.022     2G / 2G    INFO    General                 (kmer_index_builder.hpp    : 105)   Memory available for splitting buffers: 20.6445 Gb
+  0:00:10.022     2G / 2G    INFO    General                 (kmer_index_builder.hpp    : 113)   Using cell size of 1048576
+  0:00:10.149     5G / 5G    INFO    General                 (kmer_splitters.hpp        : 301)   Processed 101311 kmers
+  0:00:10.149     5G / 5G    INFO    General                 (kmer_splitters.hpp        : 306)   Used 101311 kmers.
+  0:00:10.149     5G / 5G    INFO    General                 (kmer_index_builder.hpp    : 232)   Starting k-mer counting.
+  0:00:10.178     5G / 5G    INFO    General                 (kmer_index_builder.hpp    : 238)   K-mer counting done. There are 101272 kmers in total.
+  0:00:10.178     5G / 5G    INFO    General                 (kmer_index_builder.hpp    : 240)   Merging temporary buckets.
+  0:00:10.345     5G / 5G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 355)   Building perfect hash indices
+  0:00:10.360     5G / 5G    INFO    General                 (kmer_index_builder.hpp    : 256)   Merging final buckets.
+  0:00:10.378     5G / 5G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 401)   Index built. Total 33256 bytes occupied (2.62706 bits per kmer).
+  0:00:10.378     5G / 5G    INFO   DeBruijnExtensionIndexBu (kmer_extension_index_build:  85)   Building k-mer extensions from k+1-mers
+  0:00:10.435     5G / 5G    INFO   DeBruijnExtensionIndexBu (kmer_extension_index_build:  89)   Building k-mer extensions from k+1-mers finished.
+  0:00:10.463    16M / 5G    INFO   Early tip clipping       (early_simplification.hpp  : 182)   Early tip clipping
+  0:00:10.579    16M / 5G    INFO   Early tip clipping       (early_simplification.hpp  : 185)   847 22-mers were removed by early tip clipper
+  0:00:10.579    16M / 5G    INFO    General                 (graph_construction.hpp    : 136)   Condensing graph
+  0:00:10.579    16M / 5G    INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 330)   Extracting unbranching paths
+  0:00:10.659    16M / 5G    INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 344)   Extracting unbranching paths finished. 284 sequences extracted
+  0:00:10.692    16M / 5G    INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 304)   Collecting perfect loops
+  0:00:10.727    16M / 5G    INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 319)   Collecting perfect loops finished. 0 loops collected
+  0:00:10.737    16M / 5G    INFO    General                 (graph_construction.hpp    : 141)   Building index with from graph
+  0:00:10.737    16M / 5G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 346)   Building kmer index
+  0:00:10.737    16M / 5G    INFO    General                 (kmer_splitters.hpp        : 213)   Splitting kmer instances into 16 buckets. This might take a while.
+  0:00:10.737    16M / 5G    INFO    General                 (file_limit.hpp            :  30)   Open file limit set to 256
+  0:00:10.737    16M / 5G    INFO    General                 (kmer_index_builder.hpp    : 105)   Memory available for splitting buffers: 83.3281 Gb
+  0:00:10.737    16M / 5G    INFO    General                 (kmer_index_builder.hpp    : 113)   Using cell size of 4194304
+  0:00:10.780   592M / 5G    INFO    General                 (kmer_splitters.hpp        : 229)   Used 284 sequences.
+  0:00:10.780   592M / 5G    INFO    General                 (kmer_index_builder.hpp    : 232)   Starting k-mer counting.
+  0:00:10.802   592M / 5G    INFO    General                 (kmer_index_builder.hpp    : 238)   K-mer counting done. There are 100464 kmers in total.
+  0:00:10.802   592M / 5G    INFO    General                 (kmer_index_builder.hpp    : 240)   Merging temporary buckets.
+  0:00:10.884   592M / 5G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 355)   Building perfect hash indices
+  0:00:10.918   592M / 5G    INFO    General                 (kmer_index_builder.hpp    : 256)   Merging final buckets.
+  0:00:10.934   592M / 5G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 401)   Index built. Total 32968 bytes occupied (2.62526 bits per kmer).
+  0:00:10.936    16M / 5G    INFO    General                 (edge_index_builders.hpp   :  27)   Collecting k-mer coverage information from graph, this takes a while.
+  0:00:10.990    16M / 5G    INFO    General                 (edge_index.hpp            :  91)   Index refilled
+  0:00:10.991    16M / 5G    INFO    General                 (graph_construction.hpp    : 173)   Filling coverage index
+  0:00:10.991    16M / 5G    INFO    General                 (edge_index_builders.hpp   : 105)   Collecting k-mer coverage information from reads, this takes a while.
+  0:00:21.844    16M / 5G    INFO    General                 (graph_construction.hpp    : 175)   Filling coverage and flanking coverage from index
+  0:00:21.846    16M / 5G    INFO    General                 (construction.cpp          :  30)   Figured out: read length = 100
+  0:00:21.854    16M / 5G    INFO   StageManager             (stage.cpp                 : 126)   STAGE == EC Threshold Finding
+  0:00:21.871    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 180)   Kmer coverage valley at: 6
+  0:00:21.871    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 200)   K-mer histogram maximum: 418
+  0:00:21.872    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 236)   Estimated median coverage: 418. Coverage mad: 66.717
+  0:00:21.872    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 275)   Fitting coverage model
+  0:00:22.152    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 311)   ... iteration 2
+  0:00:22.925    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 311)   ... iteration 4
+  0:00:25.646    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 311)   ... iteration 8
+  0:00:31.106    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 311)   ... iteration 16
+  0:00:38.844    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 311)   ... iteration 32
+  0:00:39.329    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 325)   Fitted mean coverage: 407.866. Fitted coverage std. dev: 68.8402
+  0:00:39.339    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 350)   Probability of erroneous kmer at valley: 0.998172
+  0:00:39.339    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 374)   Preliminary threshold calculated as: 267
+  0:00:39.339    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 378)   Threshold adjusted to: 206
+  0:00:39.339    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 391)   Estimated genome size (ignoring repeats): 98694
+  0:00:39.339    16M / 5G    INFO    General                 (genomic_info_filler.cpp   : 133)   Mean coverage was calculated as 407.866
+  0:00:39.340    16M / 5G    INFO    General                 (genomic_info_filler.cpp   : 147)   EC coverage threshold value was calculated as 206
+  0:00:39.340    16M / 5G    INFO    General                 (genomic_info_filler.cpp   : 148)   Trusted kmer low bound: 0
+  0:00:39.340    16M / 5G    INFO   StageManager             (stage.cpp                 : 126)   STAGE == Simplification
+  0:00:39.349    16M / 5G    INFO    General                 (simplification.cpp        : 349)   Graph simplification started
+  0:00:39.349    16M / 5G    INFO    General                 (simplification.cpp        :  98)   PROCEDURE == InitialCleaning
+  0:00:39.350    16M / 5G    INFO    General                 (graph_simplification.hpp  : 577)   Removing isolated edges
+  0:00:39.350    16M / 5G    INFO    General                 (graph_simplification.hpp  : 578)   All isolated edges shorter than 100 will be removed
+  0:00:39.350    16M / 5G    INFO    General                 (graph_simplification.hpp  : 579)   Also isolated edges shorter than 0 and coverage smaller than 0 will be removed
+  0:00:39.350    16M / 5G    INFO    General                 (graph_simplification.hpp  : 850)   Flanking coverage based disconnection disabled
+  0:00:39.350    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Self conjugate edge remover
+  0:00:39.350    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Initial isolated edge remover
+  0:00:39.351    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Initial tip clipper
+  0:00:39.353    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Initial ec remover
+  0:00:39.354    16M / 5G    INFO    General                 (graph_simplification.hpp  : 763)   Creating parallel br instance
+  0:00:39.354    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 1
+  0:00:39.354    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:39.355    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:39.362    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:39.363    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 2
+  0:00:39.363    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:39.363    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:39.364    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:39.364    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 3
+  0:00:39.364    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:39.364    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:39.364    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:39.364    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 4
+  0:00:39.364    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:39.364    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:39.364    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:39.364    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 5
+  0:00:39.364    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:39.364    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 6
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 7
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 8
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 9
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 10
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:39.365    16M / 5G    INFO    General                 (simplification.cpp        : 213)   PROCEDURE == Post simplification
+  0:00:39.365    16M / 5G    INFO    General                 (graph_simplification.hpp  : 763)   Creating parallel br instance
+  0:00:39.366    16M / 5G    INFO    General                 (simplification.cpp        : 268)   Iteration 0
+  0:00:39.366    16M / 5G    INFO    General                 (graph_simplification.hpp  : 463)   Removal of relatively low covered connections disabled
+  0:00:39.366    16M / 5G    INFO    General                 (graph_simplification.hpp  : 480)   Disconnection of relatively low covered edges disabled
+  0:00:39.366    16M / 5G    INFO    General                 (graph_simplification.hpp  : 536)   Complex tip clipping disabled
+  0:00:39.366    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:39.366    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:39.366    16M / 5G    INFO    General                 (simplification.cpp        : 296)   Disrupting self-conjugate edges
+  0:00:39.366    16M / 5G    INFO   StageManager             (stage.cpp                 : 126)   STAGE == Simplification Cleanup
+  0:00:39.366    16M / 5G    INFO    General                 (graph_simplification.hpp  : 577)   Removing isolated edges
+  0:00:39.366    16M / 5G    INFO    General                 (graph_simplification.hpp  : 578)   All isolated edges shorter than 150 will be removed
+  0:00:39.366    16M / 5G    INFO    General                 (graph_simplification.hpp  : 579)   Also isolated edges shorter than 0 and coverage smaller than 2 will be removed
+  0:00:39.366    16M / 5G    INFO    General                 (simplification.cpp        : 522)   Counting average coverage
+  0:00:39.366    16M / 5G    INFO    General                 (simplification.cpp        : 527)   Average coverage = 430.577
+  0:00:39.366    16M / 5G    INFO   StageManager             (stage.cpp                 : 126)   STAGE == Contig Output
+  0:00:39.367    16M / 5G    INFO    General                 (contig_output.hpp         : 309)   Outputting contigs to /Users/cmdb/qbb2016-answers/week2/spades_reads_high//K21/simplified_contigs.fasta
+  0:00:39.374    16M / 5G    INFO    General                 (contig_output.hpp         : 309)   Outputting contigs to /Users/cmdb/qbb2016-answers/week2/spades_reads_high//K21/before_rr.fasta
+  0:00:39.379    16M / 5G    INFO    General                 (contig_output.hpp         : 342)   Outputting graph to /Users/cmdb/qbb2016-answers/week2/spades_reads_high//K21/assembly_graph.fastg
+  0:00:39.389    16M / 5G    INFO    General                 (contig_output.hpp         : 309)   Outputting contigs to /Users/cmdb/qbb2016-answers/week2/spades_reads_high//K21/final_contigs.fasta
+  0:00:39.394    16M / 5G    INFO    General                 (launch.hpp                : 121)   SPAdes finished
+  0:00:39.395    16M / 5G    INFO    General                 (main.cpp                  : 109)   Assembling time: 0 hours 0 minutes 39 seconds
+
+== Running assembler: K33
+
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  75)   Loading config from /Users/cmdb/qbb2016-answers/week2/spades_reads_high/K33/configs/config.info
+  0:00:00.000     4M / 4M    INFO    General                 (memory_limit.hpp          :  47)   Memory limit set to 250 Gb
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  88)   Starting SPAdes, built from N/A, git revision N/A
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  89)   Maximum k-mer length: 128
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  90)   Assembling dataset (/Users/cmdb/qbb2016-answers/week2/spades_reads_high/dataset.info) with K=33
+  0:00:00.000     4M / 4M    INFO    General                 (launch.hpp                :  29)   SPAdes started
+  0:00:00.000     4M / 4M    INFO    General                 (launch.hpp                :  36)   Starting from stage: construction
+  0:00:00.000     4M / 4M    INFO    General                 (launch.hpp                :  39)   Two-step RR enabled: 0
+  0:00:00.000     4M / 4M    INFO   StageManager             (stage.cpp                 : 126)   STAGE == Construction
+  0:00:00.002     4M / 4M    INFO    General                 (read_converter.hpp        :  61)   Binary reads detected
+  0:00:00.004     4M / 4M    INFO    General                 (graph_construction.hpp    : 120)   Constructing DeBruijn graph for k=33
+  0:00:00.004     4M / 4M    INFO    General                 (kmer_splitters.hpp        : 130)   Splitting kmer instances into 16 buckets. This might take a while.
+  0:00:00.005     4M / 4M    INFO    General                 (file_limit.hpp            :  30)   Open file limit set to 256
+  0:00:00.005     4M / 4M    INFO    General                 (kmer_index_builder.hpp    : 105)   Memory available for splitting buffers: 20.833 Gb
+  0:00:00.005     4M / 4M    INFO    General                 (kmer_index_builder.hpp    : 113)   Using cell size of 2097152
+  0:00:06.231     2G / 2G    INFO    General                 (kmer_splitters.hpp        : 154)   Processed 1224696 reads
+  0:00:06.231     2G / 2G    INFO    General                 (kmer_splitters.hpp        : 160)   Adding contigs from previous K
+  0:00:06.265     2G / 2G    INFO    General                 (kmer_splitters.hpp        : 171)   Used 1224696 reads. Maximum read length 100
+  0:00:06.265     2G / 2G    INFO    General                 (kmer_splitters.hpp        : 172)   Average read length 91.2303
+  0:00:06.265     2G / 2G    INFO    General                 (kmer_index_builder.hpp    : 232)   Starting k-mer counting.
+  0:00:06.312     2G / 2G    INFO    General                 (kmer_index_builder.hpp    : 238)   K-mer counting done. There are 101682 kmers in total.
+  0:00:06.312     2G / 2G    INFO    General                 (kmer_index_builder.hpp    : 240)   Merging temporary buckets.
+  0:00:06.406     2G / 2G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 346)   Building kmer index
+  0:00:06.406     2G / 2G    INFO    General                 (kmer_splitters.hpp        : 282)   Splitting kmer instances into 64 buckets. This might take a while.
+  0:00:06.407     2G / 2G    INFO    General                 (file_limit.hpp            :  30)   Open file limit set to 256
+  0:00:06.407     2G / 2G    INFO    General                 (kmer_index_builder.hpp    : 105)   Memory available for splitting buffers: 20.6445 Gb
+  0:00:06.407     2G / 2G    INFO    General                 (kmer_index_builder.hpp    : 113)   Using cell size of 524288
+  0:00:06.531     5G / 5G    INFO    General                 (kmer_splitters.hpp        : 301)   Processed 101682 kmers
+  0:00:06.531     5G / 5G    INFO    General                 (kmer_splitters.hpp        : 306)   Used 101682 kmers.
+  0:00:06.531     5G / 5G    INFO    General                 (kmer_index_builder.hpp    : 232)   Starting k-mer counting.
+  0:00:06.599     5G / 5G    INFO    General                 (kmer_index_builder.hpp    : 238)   K-mer counting done. There are 101655 kmers in total.
+  0:00:06.599     5G / 5G    INFO    General                 (kmer_index_builder.hpp    : 240)   Merging temporary buckets.
+  0:00:06.811     5G / 5G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 355)   Building perfect hash indices
+  0:00:06.828     5G / 5G    INFO    General                 (kmer_index_builder.hpp    : 256)   Merging final buckets.
+  0:00:06.857     5G / 5G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 401)   Index built. Total 33360 bytes occupied (2.62535 bits per kmer).
+  0:00:06.857     5G / 5G    INFO   DeBruijnExtensionIndexBu (kmer_extension_index_build:  85)   Building k-mer extensions from k+1-mers
+  0:00:06.918     5G / 5G    INFO   DeBruijnExtensionIndexBu (kmer_extension_index_build:  89)   Building k-mer extensions from k+1-mers finished.
+  0:00:06.967    16M / 5G    INFO   Early tip clipping       (early_simplification.hpp  : 182)   Early tip clipping
+  0:00:07.087    16M / 5G    INFO   Early tip clipping       (early_simplification.hpp  : 185)   907 34-mers were removed by early tip clipper
+  0:00:07.087    16M / 5G    INFO    General                 (graph_construction.hpp    : 136)   Condensing graph
+  0:00:07.087    16M / 5G    INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 330)   Extracting unbranching paths
+  0:00:07.187    16M / 5G    INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 344)   Extracting unbranching paths finished. 236 sequences extracted
+  0:00:07.221    16M / 5G    INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 304)   Collecting perfect loops
+  0:00:07.263    16M / 5G    INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 319)   Collecting perfect loops finished. 0 loops collected
+  0:00:07.264    16M / 5G    INFO    General                 (graph_construction.hpp    : 141)   Building index with from graph
+  0:00:07.264    16M / 5G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 346)   Building kmer index
+  0:00:07.264    16M / 5G    INFO    General                 (kmer_splitters.hpp        : 213)   Splitting kmer instances into 16 buckets. This might take a while.
+  0:00:07.264    16M / 5G    INFO    General                 (file_limit.hpp            :  30)   Open file limit set to 256
+  0:00:07.264    16M / 5G    INFO    General                 (kmer_index_builder.hpp    : 105)   Memory available for splitting buffers: 83.3281 Gb
+  0:00:07.264    16M / 5G    INFO    General                 (kmer_index_builder.hpp    : 113)   Using cell size of 2097152
+  0:00:07.304   592M / 5G    INFO    General                 (kmer_splitters.hpp        : 229)   Used 236 sequences.
+  0:00:07.304   592M / 5G    INFO    General                 (kmer_index_builder.hpp    : 232)   Starting k-mer counting.
+  0:00:07.329   592M / 5G    INFO    General                 (kmer_index_builder.hpp    : 238)   K-mer counting done. There are 100775 kmers in total.
+  0:00:07.329   592M / 5G    INFO    General                 (kmer_index_builder.hpp    : 240)   Merging temporary buckets.
+  0:00:07.398   592M / 5G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 355)   Building perfect hash indices
+  0:00:07.431   592M / 5G    INFO    General                 (kmer_index_builder.hpp    : 256)   Merging final buckets.
+  0:00:07.450   592M / 5G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 401)   Index built. Total 33080 bytes occupied (2.62605 bits per kmer).
+  0:00:07.452    16M / 5G    INFO    General                 (edge_index_builders.hpp   :  27)   Collecting k-mer coverage information from graph, this takes a while.
+  0:00:07.509    16M / 5G    INFO    General                 (edge_index.hpp            :  91)   Index refilled
+  0:00:07.510    16M / 5G    INFO    General                 (graph_construction.hpp    : 173)   Filling coverage index
+  0:00:07.510    16M / 5G    INFO    General                 (edge_index_builders.hpp   : 105)   Collecting k-mer coverage information from reads, this takes a while.
+  0:00:18.395    16M / 5G    INFO    General                 (graph_construction.hpp    : 175)   Filling coverage and flanking coverage from index
+  0:00:18.397    16M / 5G    INFO    General                 (construction.cpp          :  30)   Figured out: read length = 100
+  0:00:18.397    16M / 5G    INFO   StageManager             (stage.cpp                 : 126)   STAGE == EC Threshold Finding
+  0:00:18.406    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 180)   Kmer coverage valley at: 3
+  0:00:18.406    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 200)   K-mer histogram maximum: 356
+  0:00:18.406    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 236)   Estimated median coverage: 356. Coverage mad: 62.2692
+  0:00:18.406    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 275)   Fitting coverage model
+  0:00:18.674    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 311)   ... iteration 2
+  0:00:19.342    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 311)   ... iteration 4
+  0:00:21.931    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 311)   ... iteration 8
+  0:00:27.778    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 311)   ... iteration 16
+  0:00:35.401    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 311)   ... iteration 32
+  0:00:35.858    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 325)   Fitted mean coverage: 338.322. Fitted coverage std. dev: 64.212
+  0:00:35.868    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 350)   Probability of erroneous kmer at valley: 0.989709
+  0:00:35.868    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 374)   Preliminary threshold calculated as: 220
+  0:00:35.868    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 378)   Threshold adjusted to: 170
+  0:00:35.868    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 391)   Estimated genome size (ignoring repeats): 98045
+  0:00:35.868    16M / 5G    INFO    General                 (genomic_info_filler.cpp   : 133)   Mean coverage was calculated as 338.322
+  0:00:35.869    16M / 5G    INFO    General                 (genomic_info_filler.cpp   : 147)   EC coverage threshold value was calculated as 170
+  0:00:35.869    16M / 5G    INFO    General                 (genomic_info_filler.cpp   : 148)   Trusted kmer low bound: 0
+  0:00:35.869    16M / 5G    INFO   StageManager             (stage.cpp                 : 126)   STAGE == Simplification
+  0:00:35.869    16M / 5G    INFO    General                 (simplification.cpp        : 349)   Graph simplification started
+  0:00:35.869    16M / 5G    INFO    General                 (simplification.cpp        :  98)   PROCEDURE == InitialCleaning
+  0:00:35.870    16M / 5G    INFO    General                 (graph_simplification.hpp  : 577)   Removing isolated edges
+  0:00:35.870    16M / 5G    INFO    General                 (graph_simplification.hpp  : 578)   All isolated edges shorter than 100 will be removed
+  0:00:35.870    16M / 5G    INFO    General                 (graph_simplification.hpp  : 579)   Also isolated edges shorter than 0 and coverage smaller than 0 will be removed
+  0:00:35.870    16M / 5G    INFO    General                 (graph_simplification.hpp  : 850)   Flanking coverage based disconnection disabled
+  0:00:35.870    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Self conjugate edge remover
+  0:00:35.870    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Initial isolated edge remover
+  0:00:35.870    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Initial tip clipper
+  0:00:35.872    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Initial ec remover
+  0:00:35.873    16M / 5G    INFO    General                 (graph_simplification.hpp  : 763)   Creating parallel br instance
+  0:00:35.873    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 1
+  0:00:35.873    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:35.873    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:35.878    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:35.880    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 2
+  0:00:35.880    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:35.880    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:35.881    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:35.882    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 3
+  0:00:35.882    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:35.882    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 4
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 5
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 6
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 7
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 8
+  0:00:35.883    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:35.884    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:35.884    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:35.884    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 9
+  0:00:35.884    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:35.884    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:35.884    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:35.884    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 10
+  0:00:35.884    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:35.884    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:35.884    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:35.884    16M / 5G    INFO    General                 (simplification.cpp        : 213)   PROCEDURE == Post simplification
+  0:00:35.884    16M / 5G    INFO    General                 (graph_simplification.hpp  : 763)   Creating parallel br instance
+  0:00:35.884    16M / 5G    INFO    General                 (simplification.cpp        : 268)   Iteration 0
+  0:00:35.884    16M / 5G    INFO    General                 (graph_simplification.hpp  : 463)   Removal of relatively low covered connections disabled
+  0:00:35.884    16M / 5G    INFO    General                 (graph_simplification.hpp  : 480)   Disconnection of relatively low covered edges disabled
+  0:00:35.884    16M / 5G    INFO    General                 (graph_simplification.hpp  : 536)   Complex tip clipping disabled
+  0:00:35.884    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:35.884    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:35.884    16M / 5G    INFO    General                 (simplification.cpp        : 296)   Disrupting self-conjugate edges
+  0:00:35.884    16M / 5G    INFO   StageManager             (stage.cpp                 : 126)   STAGE == Simplification Cleanup
+  0:00:35.885    16M / 5G    INFO    General                 (graph_simplification.hpp  : 577)   Removing isolated edges
+  0:00:35.885    16M / 5G    INFO    General                 (graph_simplification.hpp  : 578)   All isolated edges shorter than 150 will be removed
+  0:00:35.885    16M / 5G    INFO    General                 (graph_simplification.hpp  : 579)   Also isolated edges shorter than 0 and coverage smaller than 2 will be removed
+  0:00:35.885    16M / 5G    INFO    General                 (simplification.cpp        : 522)   Counting average coverage
+  0:00:35.885    16M / 5G    INFO    General                 (simplification.cpp        : 527)   Average coverage = 356.918
+  0:00:35.885    16M / 5G    INFO   StageManager             (stage.cpp                 : 126)   STAGE == Contig Output
+  0:00:35.885    16M / 5G    INFO    General                 (contig_output.hpp         : 309)   Outputting contigs to /Users/cmdb/qbb2016-answers/week2/spades_reads_high//K33/simplified_contigs.fasta
+  0:00:35.897    16M / 5G    INFO    General                 (contig_output.hpp         : 309)   Outputting contigs to /Users/cmdb/qbb2016-answers/week2/spades_reads_high//K33/before_rr.fasta
+  0:00:35.902    16M / 5G    INFO    General                 (contig_output.hpp         : 342)   Outputting graph to /Users/cmdb/qbb2016-answers/week2/spades_reads_high//K33/assembly_graph.fastg
+  0:00:35.912    16M / 5G    INFO    General                 (contig_output.hpp         : 309)   Outputting contigs to /Users/cmdb/qbb2016-answers/week2/spades_reads_high//K33/final_contigs.fasta
+  0:00:35.924    16M / 5G    INFO    General                 (launch.hpp                : 121)   SPAdes finished
+  0:00:35.925    16M / 5G    INFO    General                 (main.cpp                  : 109)   Assembling time: 0 hours 0 minutes 35 seconds
+
+== Running assembler: K55
+
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  75)   Loading config from /Users/cmdb/qbb2016-answers/week2/spades_reads_high/K55/configs/config.info
+  0:00:00.000     4M / 4M    INFO    General                 (memory_limit.hpp          :  47)   Memory limit set to 250 Gb
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  88)   Starting SPAdes, built from N/A, git revision N/A
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  89)   Maximum k-mer length: 128
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  90)   Assembling dataset (/Users/cmdb/qbb2016-answers/week2/spades_reads_high/dataset.info) with K=55
+  0:00:00.000     4M / 4M    INFO    General                 (launch.hpp                :  29)   SPAdes started
+  0:00:00.000     4M / 4M    INFO    General                 (launch.hpp                :  36)   Starting from stage: construction
+  0:00:00.000     4M / 4M    INFO    General                 (launch.hpp                :  39)   Two-step RR enabled: 0
+  0:00:00.000     4M / 4M    INFO    General                 (launch.hpp                :  58)   Will need read mapping, kmer mapper will be attached
+  0:00:00.000     4M / 4M    INFO   StageManager             (stage.cpp                 : 126)   STAGE == Construction
+  0:00:00.002     4M / 4M    INFO    General                 (read_converter.hpp        :  61)   Binary reads detected
+  0:00:00.004     4M / 4M    INFO    General                 (graph_construction.hpp    : 120)   Constructing DeBruijn graph for k=55
+  0:00:00.004     4M / 4M    INFO    General                 (kmer_splitters.hpp        : 130)   Splitting kmer instances into 16 buckets. This might take a while.
+  0:00:00.004     4M / 4M    INFO    General                 (file_limit.hpp            :  30)   Open file limit set to 256
+  0:00:00.004     4M / 4M    INFO    General                 (kmer_index_builder.hpp    : 105)   Memory available for splitting buffers: 20.833 Gb
+  0:00:00.004     4M / 4M    INFO    General                 (kmer_index_builder.hpp    : 113)   Using cell size of 2097152
+  0:00:03.747     2G / 2G    INFO    General                 (kmer_splitters.hpp        : 154)   Processed 1224696 reads
+  0:00:03.747     2G / 2G    INFO    General                 (kmer_splitters.hpp        : 160)   Adding contigs from previous K
+  0:00:03.783     2G / 2G    INFO    General                 (kmer_splitters.hpp        : 171)   Used 1224696 reads. Maximum read length 100
+  0:00:03.783     2G / 2G    INFO    General                 (kmer_splitters.hpp        : 172)   Average read length 91.2303
+  0:00:03.783     2G / 2G    INFO    General                 (kmer_index_builder.hpp    : 232)   Starting k-mer counting.
+  0:00:03.824     2G / 2G    INFO    General                 (kmer_index_builder.hpp    : 238)   K-mer counting done. There are 102127 kmers in total.
+  0:00:03.824     2G / 2G    INFO    General                 (kmer_index_builder.hpp    : 240)   Merging temporary buckets.
+  0:00:03.917     2G / 2G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 346)   Building kmer index
+  0:00:03.917     2G / 2G    INFO    General                 (kmer_splitters.hpp        : 282)   Splitting kmer instances into 64 buckets. This might take a while.
+  0:00:03.917     2G / 2G    INFO    General                 (file_limit.hpp            :  30)   Open file limit set to 256
+  0:00:03.917     2G / 2G    INFO    General                 (kmer_index_builder.hpp    : 105)   Memory available for splitting buffers: 20.6445 Gb
+  0:00:03.917     2G / 2G    INFO    General                 (kmer_index_builder.hpp    : 113)   Using cell size of 524288
+  0:00:04.072     5G / 5G    INFO    General                 (kmer_splitters.hpp        : 301)   Processed 102127 kmers
+  0:00:04.073     5G / 5G    INFO    General                 (kmer_splitters.hpp        : 306)   Used 102127 kmers.
+  0:00:04.073     5G / 5G    INFO    General                 (kmer_index_builder.hpp    : 232)   Starting k-mer counting.
+  0:00:04.137     5G / 5G    INFO    General                 (kmer_index_builder.hpp    : 238)   K-mer counting done. There are 102113 kmers in total.
+  0:00:04.137     5G / 5G    INFO    General                 (kmer_index_builder.hpp    : 240)   Merging temporary buckets.
+  0:00:04.314     5G / 5G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 355)   Building perfect hash indices
+  0:00:04.335     5G / 5G    INFO    General                 (kmer_index_builder.hpp    : 256)   Merging final buckets.
+  0:00:04.369     5G / 5G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 401)   Index built. Total 33504 bytes occupied (2.62486 bits per kmer).
+  0:00:04.369     5G / 5G    INFO   DeBruijnExtensionIndexBu (kmer_extension_index_build:  85)   Building k-mer extensions from k+1-mers
+  0:00:04.463     5G / 5G    INFO   DeBruijnExtensionIndexBu (kmer_extension_index_build:  89)   Building k-mer extensions from k+1-mers finished.
+  0:00:04.492    16M / 5G    INFO    General                 (graph_construction.hpp    : 136)   Condensing graph
+  0:00:04.492    16M / 5G    INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 330)   Extracting unbranching paths
+  0:00:04.581    16M / 5G    INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 344)   Extracting unbranching paths finished. 1014 sequences extracted
+  0:00:04.615    16M / 5G    INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 304)   Collecting perfect loops
+  0:00:04.658    16M / 5G    INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 319)   Collecting perfect loops finished. 0 loops collected
+  0:00:04.668    16M / 5G    INFO    General                 (graph_construction.hpp    : 141)   Building index with from graph
+  0:00:04.669    16M / 5G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 346)   Building kmer index
+  0:00:04.669    16M / 5G    INFO    General                 (kmer_splitters.hpp        : 213)   Splitting kmer instances into 16 buckets. This might take a while.
+  0:00:04.669    16M / 5G    INFO    General                 (file_limit.hpp            :  30)   Open file limit set to 256
+  0:00:04.669    16M / 5G    INFO    General                 (kmer_index_builder.hpp    : 105)   Memory available for splitting buffers: 83.3281 Gb
+  0:00:04.669    16M / 5G    INFO    General                 (kmer_index_builder.hpp    : 113)   Using cell size of 2097152
+  0:00:04.715   592M / 5G    INFO    General                 (kmer_splitters.hpp        : 229)   Used 1014 sequences.
+  0:00:04.715   592M / 5G    INFO    General                 (kmer_index_builder.hpp    : 232)   Starting k-mer counting.
+  0:00:04.738   592M / 5G    INFO    General                 (kmer_index_builder.hpp    : 238)   K-mer counting done. There are 102127 kmers in total.
+  0:00:04.738   592M / 5G    INFO    General                 (kmer_index_builder.hpp    : 240)   Merging temporary buckets.
+  0:00:04.823   592M / 5G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 355)   Building perfect hash indices
+  0:00:04.855   592M / 5G    INFO    General                 (kmer_index_builder.hpp    : 256)   Merging final buckets.
+  0:00:04.872   592M / 5G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 401)   Index built. Total 33512 bytes occupied (2.62512 bits per kmer).
+  0:00:04.874    16M / 5G    INFO    General                 (edge_index_builders.hpp   :  27)   Collecting k-mer coverage information from graph, this takes a while.
+  0:00:04.932    16M / 5G    INFO    General                 (edge_index.hpp            :  91)   Index refilled
+  0:00:04.933    16M / 5G    INFO    General                 (graph_construction.hpp    : 173)   Filling coverage index
+  0:00:04.933    16M / 5G    INFO    General                 (edge_index_builders.hpp   : 105)   Collecting k-mer coverage information from reads, this takes a while.
+  0:00:13.920    16M / 5G    INFO    General                 (graph_construction.hpp    : 175)   Filling coverage and flanking coverage from index
+  0:00:13.922    16M / 5G    INFO    General                 (construction.cpp          :  30)   Figured out: read length = 100
+  0:00:13.922    16M / 5G    INFO   StageManager             (stage.cpp                 : 126)   STAGE == EC Threshold Finding
+  0:00:13.929    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 180)   Kmer coverage valley at: 7
+  0:00:13.929    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 200)   K-mer histogram maximum: 225
+  0:00:13.929    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 236)   Estimated median coverage: 225. Coverage mad: 51.891
+  0:00:13.929    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 275)   Fitting coverage model
+  0:00:14.120    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 311)   ... iteration 2
+  0:00:14.595    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 311)   ... iteration 4
+  0:00:16.442    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 311)   ... iteration 8
+  0:00:20.616    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 311)   ... iteration 16
+  0:00:27.705    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 311)   ... iteration 32
+  0:00:30.270    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 325)   Fitted mean coverage: 212.461. Fitted coverage std. dev: 54.5846
+  0:00:30.276    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 350)   Probability of erroneous kmer at valley: 0.910551
+  0:00:30.276    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 374)   Preliminary threshold calculated as: 75
+  0:00:30.276    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 378)   Threshold adjusted to: 75
+  0:00:30.276    16M / 5G    INFO    General                 (kmer_coverage_model.cpp   : 391)   Estimated genome size (ignoring repeats): 98907
+  0:00:30.276    16M / 5G    INFO    General                 (genomic_info_filler.cpp   : 133)   Mean coverage was calculated as 212.461
+  0:00:30.276    16M / 5G    INFO    General                 (genomic_info_filler.cpp   : 147)   EC coverage threshold value was calculated as 75
+  0:00:30.276    16M / 5G    INFO    General                 (genomic_info_filler.cpp   : 148)   Trusted kmer low bound: 0
+  0:00:30.276    16M / 5G    INFO   StageManager             (stage.cpp                 : 126)   STAGE == Gap Closer
+  0:00:30.286    16M / 5G    INFO    General                 (gap_closer.cpp            : 162)   Preparing shift maps
+  0:00:30.287    16M / 5G    INFO    General                 (gap_closer.cpp            : 122)   Processing paired reads (takes a while)
+  0:00:31.450    16M / 5G    INFO    General                 (gap_closer.cpp            : 141)   Used 306174 paired reads
+  0:00:31.450    16M / 5G    INFO    General                 (gap_closer.cpp            : 143)   Merging paired indices
+  0:00:31.458    16M / 5G    INFO   GapCloser                (gap_closer.cpp            : 402)   Closing short gaps
+  0:00:31.460    16M / 5G    INFO   GapCloser                (gap_closer.cpp            : 436)   Closing short gaps complete: filled 0 gaps after checking 0 candidates
+  0:00:31.460    16M / 5G    INFO   StageManager             (stage.cpp                 : 126)   STAGE == Simplification
+  0:00:31.461    16M / 5G    INFO    General                 (simplification.cpp        : 349)   Graph simplification started
+  0:00:31.461    16M / 5G    INFO    General                 (simplification.cpp        :  98)   PROCEDURE == InitialCleaning
+  0:00:31.461    16M / 5G    INFO    General                 (graph_simplification.hpp  : 577)   Removing isolated edges
+  0:00:31.461    16M / 5G    INFO    General                 (graph_simplification.hpp  : 578)   All isolated edges shorter than 100 will be removed
+  0:00:31.461    16M / 5G    INFO    General                 (graph_simplification.hpp  : 579)   Also isolated edges shorter than 0 and coverage smaller than 0 will be removed
+  0:00:31.461    16M / 5G    INFO    General                 (graph_simplification.hpp  : 850)   Flanking coverage based disconnection disabled
+  0:00:31.461    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Self conjugate edge remover
+  0:00:31.462    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Initial isolated edge remover
+  0:00:31.462    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Initial tip clipper
+  0:00:31.474    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Initial ec remover
+  0:00:31.474    16M / 5G    INFO    General                 (graph_simplification.hpp  : 763)   Creating parallel br instance
+  0:00:31.474    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 1
+  0:00:31.474    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:31.474    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:31.480    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:31.480    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 2
+  0:00:31.480    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:31.480    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:31.480    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:31.480    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 3
+  0:00:31.480    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:31.481    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 4
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 5
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 6
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 7
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 8
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:31.483    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:31.484    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:31.484    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 9
+  0:00:31.484    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:31.484    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:31.484    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:31.484    16M / 5G    INFO    General                 (simplification.cpp        : 372)   PROCEDURE == Simplification cycle, iteration 10
+  0:00:31.484    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:31.484    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:31.484    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Low coverage edge remover
+  0:00:31.484    16M / 5G    INFO    General                 (simplification.cpp        : 213)   PROCEDURE == Post simplification
+  0:00:31.484    16M / 5G    INFO    General                 (graph_simplification.hpp  : 763)   Creating parallel br instance
+  0:00:31.484    16M / 5G    INFO    General                 (simplification.cpp        : 268)   Iteration 0
+  0:00:31.489    16M / 5G    INFO    General                 (graph_simplification.hpp  : 463)   Removal of relatively low covered connections disabled
+  0:00:31.489    16M / 5G    INFO    General                 (graph_simplification.hpp  : 480)   Disconnection of relatively low covered edges disabled
+  0:00:31.489    16M / 5G    INFO    General                 (graph_simplification.hpp  : 536)   Complex tip clipping disabled
+  0:00:31.489    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Tip clipper
+  0:00:31.489    16M / 5G    INFO    General                 (simplification.cpp        : 326)   Running Bulge remover
+  0:00:31.490    16M / 5G    INFO    General                 (simplification.cpp        : 296)   Disrupting self-conjugate edges
+  0:00:31.490    16M / 5G    INFO   StageManager             (stage.cpp                 : 126)   STAGE == Gap Closer
+  0:00:31.490    16M / 5G    INFO    General                 (graph_pack.hpp            :  91)   Index refill
+  0:00:31.490    16M / 5G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 346)   Building kmer index
+  0:00:31.490    16M / 5G    INFO    General                 (kmer_splitters.hpp        : 213)   Splitting kmer instances into 16 buckets. This might take a while.
+  0:00:31.490    16M / 5G    INFO    General                 (file_limit.hpp            :  30)   Open file limit set to 256
+  0:00:31.490    16M / 5G    INFO    General                 (kmer_index_builder.hpp    : 105)   Memory available for splitting buffers: 83.3281 Gb
+  0:00:31.490    16M / 5G    INFO    General                 (kmer_index_builder.hpp    : 113)   Using cell size of 2097152
+  0:00:31.527   592M / 5G    INFO    General                 (kmer_splitters.hpp        : 229)   Used 8 sequences.
+  0:00:31.527   592M / 5G    INFO    General                 (kmer_index_builder.hpp    : 232)   Starting k-mer counting.
+  0:00:31.554   592M / 5G    INFO    General                 (kmer_index_builder.hpp    : 238)   K-mer counting done. There are 99916 kmers in total.
+  0:00:31.554   592M / 5G    INFO    General                 (kmer_index_builder.hpp    : 240)   Merging temporary buckets.
+  0:00:31.636   592M / 5G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 355)   Building perfect hash indices
+  0:00:31.672   592M / 5G    INFO    General                 (kmer_index_builder.hpp    : 256)   Merging final buckets.
+  0:00:31.688   592M / 5G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 401)   Index built. Total 32776 bytes occupied (2.62428 bits per kmer).
+  0:00:31.689    16M / 5G    INFO    General                 (edge_index_builders.hpp   :  27)   Collecting k-mer coverage information from graph, this takes a while.
+  0:00:31.812    16M / 5G    INFO    General                 (edge_index.hpp            :  91)   Index refilled
+  0:00:31.813    16M / 5G    INFO    General                 (gap_closer.cpp            : 162)   Preparing shift maps
+  0:00:31.813    16M / 5G    INFO    General                 (gap_closer.cpp            : 122)   Processing paired reads (takes a while)
+  0:00:33.022    16M / 5G    INFO    General                 (gap_closer.cpp            : 141)   Used 306174 paired reads
+  0:00:33.022    16M / 5G    INFO    General                 (gap_closer.cpp            : 143)   Merging paired indices
+  0:00:33.022    16M / 5G    INFO   GapCloser                (gap_closer.cpp            : 402)   Closing short gaps
+  0:00:33.022    16M / 5G    INFO   GapCloser                (gap_closer.cpp            : 436)   Closing short gaps complete: filled 0 gaps after checking 0 candidates
+  0:00:33.023    16M / 5G    INFO   StageManager             (stage.cpp                 : 126)   STAGE == Simplification Cleanup
+  0:00:33.023    16M / 5G    INFO    General                 (graph_simplification.hpp  : 577)   Removing isolated edges
+  0:00:33.023    16M / 5G    INFO    General                 (graph_simplification.hpp  : 578)   All isolated edges shorter than 150 will be removed
+  0:00:33.023    16M / 5G    INFO    General                 (graph_simplification.hpp  : 579)   Also isolated edges shorter than 0 and coverage smaller than 2 will be removed
+  0:00:33.023    16M / 5G    INFO    General                 (simplification.cpp        : 522)   Counting average coverage
+  0:00:33.023    16M / 5G    INFO    General                 (simplification.cpp        : 527)   Average coverage = 225.054
+  0:00:33.023    16M / 5G    INFO   StageManager             (stage.cpp                 : 126)   STAGE == Mismatch Correction
+  0:00:33.023    16M / 5G    INFO    General                 (graph_pack.hpp            : 100)   Normalizing k-mer map. Total 1586 kmers to process
+  0:00:33.024    16M / 5G    INFO    General                 (graph_pack.hpp            : 102)   Normalizing done
+  0:00:36.451    16M / 5G    INFO    General                 (mismatch_shall_not_pass.hp: 188)   Finished collecting potential mismatches positions
+  0:00:36.454    16M / 5G    INFO    General                 (mismatch_shall_not_pass.hp: 291)   All edges processed
+  0:00:36.454    16M / 5G    INFO    General                 (mismatch_correction.cpp   :  26)   Corrected 0 nucleotides
+  0:00:36.454    16M / 5G    INFO   StageManager             (stage.cpp                 : 126)   STAGE == Paired Information Counting
+  0:00:36.462    16M / 5G    INFO    General                 (graph_pack.hpp            : 100)   Normalizing k-mer map. Total 1586 kmers to process
+  0:00:36.462    16M / 5G    INFO    General                 (graph_pack.hpp            : 102)   Normalizing done
+  0:00:36.462    16M / 5G    INFO    General                 (pair_info_count.cpp       : 173)   Min edge length for estimation: 66606
+  0:00:36.462    16M / 5G    INFO    General                 (pair_info_count.cpp       : 187)   Estimating insert size for library #0
+  0:00:36.462    16M / 5G    INFO    General                 (pair_info_count.cpp       :  23)   Estimating insert size (takes a while)
+  0:00:36.464    16M / 5G    INFO    General                 (short_read_mapper.hpp     :  93)   Selecting usual mapper
+  0:00:37.826    16M / 5G    INFO    General                 (sequence_mapper_notifier.h:  94)   Total 306174 reads processed
+  0:00:37.826    16M / 5G    INFO    General                 (pair_info_count.cpp       :  36)   190086 paired reads (62.0843% of all) aligned to long edges
+  0:00:37.826    16M / 5G    INFO    General                 (pair_info_count.cpp       : 209)     Insert size = 215.211, deviation = 10.1692, left quantile = 202, right quantile = 228, read length = 100
+  0:00:37.826    16M / 5G    INFO    General                 (pair_info_count.cpp       : 231)   Mapping library #0
+  0:00:37.826    16M / 5G    INFO    General                 (pair_info_count.cpp       : 243)   Mapping paired reads (takes a while)
+  0:00:37.826    16M / 5G    INFO    General                 (pair_info_count.cpp       :  87)   Left insert size qauntile 202, right insert size quantile 228
+  0:00:37.827    16M / 5G    INFO    General                 (short_read_mapper.hpp     :  93)   Selecting usual mapper
+  0:00:39.576    16M / 5G    INFO    General                 (sequence_mapper_notifier.h:  94)   Total 306174 reads processed
+  0:00:39.595    20M / 5G    INFO    General                 (split_graph_pair_info.hpp : 356)   Threshold for paired information 2.69948
+  0:00:39.599    16M / 5G    INFO   StageManager             (stage.cpp                 : 126)   STAGE == Distance Estimation
+  0:00:39.607    16M / 5G    INFO    General                 (distance_estimation.cpp   : 226)   Processing library #0
+  0:00:39.607    16M / 5G    INFO    General                 (distance_estimation.cpp   : 132)   Weight Filter Done
+  0:00:39.608    16M / 5G    INFO   DistanceEstimator        (distance_estimation.hpp   : 185)   Using SIMPLE distance estimator
+  0:00:39.609    16M / 5G    INFO    General                 (distance_estimation.cpp   :  35)   Filtering info
+  0:00:39.609    16M / 5G    INFO    General                 (pair_info_filters.hpp     : 242)   Start filtering; index size: 32
+  0:00:39.609    16M / 5G    INFO    General                 (pair_info_filters.hpp     : 263)   Done filtering
+  0:00:39.609    16M / 5G    INFO    General                 (distance_estimation.cpp   : 174)   Refining clustered pair information
+  0:00:39.609    16M / 5G    INFO    General                 (distance_estimation.cpp   : 176)   The refining of clustered pair information has been finished
+  0:00:39.609    16M / 5G    INFO    General                 (distance_estimation.cpp   : 178)   Improving paired information
+  0:00:39.617    16M / 5G    INFO   PairInfoImprover         (pair_info_improver.hpp    : 103)   Paired info stats: missing = 0; contradictional = 0
+  0:00:39.623    16M / 5G    INFO   PairInfoImprover         (pair_info_improver.hpp    : 103)   Paired info stats: missing = 0; contradictional = 0
+  0:00:39.623    16M / 5G    INFO    General                 (distance_estimation.cpp   : 185)   Filling scaffolding index
+  0:00:39.623    16M / 5G    INFO   DistanceEstimator        (distance_estimation.hpp   : 185)   Using SMOOTHING distance estimator
+  0:00:39.623    16M / 5G    INFO    General                 (distance_estimation.cpp   :  35)   Filtering info
+  0:00:39.623    16M / 5G    INFO    General                 (pair_info_filters.hpp     : 242)   Start filtering; index size: 8
+  0:00:39.623    16M / 5G    INFO    General                 (pair_info_filters.hpp     : 263)   Done filtering
+  0:00:39.623    16M / 5G    INFO    General                 (distance_estimation.cpp   : 230)   Clearing raw paired index
+  0:00:39.623    16M / 5G    INFO   StageManager             (stage.cpp                 : 126)   STAGE == Repeat Resolving
+  0:00:39.623    16M / 5G    INFO    General                 (contig_output.hpp         : 309)   Outputting contigs to /Users/cmdb/qbb2016-answers/week2/spades_reads_high//K55/before_rr.fasta
+  0:00:39.630    16M / 5G    INFO    General                 (contig_output.hpp         : 342)   Outputting graph to /Users/cmdb/qbb2016-answers/week2/spades_reads_high//K55/assembly_graph.fastg
+  0:00:39.642    16M / 5G    INFO    General                 (repeat_resolving.cpp      :  78)   Using Path-Extend repeat resolving
+  0:00:39.642    16M / 5G    INFO    General                 (path_extend_launch.hpp    :1056)   ExSPAnder repeat resolving tool started
+  0:00:39.643    16M / 5G    INFO    General                 (path_extend_launch.hpp    :1094)   SUBSTAGE = paired-end libraries
+  0:00:39.643    16M / 5G    INFO    General                 (path_extend_launch.hpp    : 465)   Threshold for lib #0: 2.69948
+  0:00:39.643    16M / 5G    INFO    General                 (path_extend_launch.hpp    : 465)   Threshold for lib #0: 2.69948
+  0:00:39.643    16M / 5G    INFO    General                 (path_extend_launch.hpp    : 874)   Using 1 paired-end library
+  0:00:39.644    16M / 5G    INFO    General                 (path_extend_launch.hpp    : 875)   Using 1 paired-end scaffolding library
+  0:00:39.644    16M / 5G    INFO    General                 (path_extend_launch.hpp    : 876)   Using 0 mate-pair libraries
+  0:00:39.644    16M / 5G    INFO    General                 (path_extend_launch.hpp    : 877)   Using 0 single read libraries
+  0:00:39.644    16M / 5G    INFO    General                 (path_extend_launch.hpp    : 878)   Scaffolder is on
+  0:00:39.645    16M / 5G    INFO    General                 (path_extend_launch.hpp    :1115)   Growing paths using paired-end and long single reads
+  0:00:39.645    16M / 5G    INFO    General                 (path_extend_launch.hpp    :1116)   Multi path extend is off
+  0:00:39.645    16M / 5G    INFO    General                 (path_extend_launch.hpp    :1117)   Overlap removal is on
+  0:00:39.647    16M / 5G    INFO    General                 (path_extend_launch.hpp    : 465)   Threshold for lib #0: 2.69948
+  0:00:39.647    16M / 5G    INFO    General                 (path_extend_launch.hpp    : 465)   Threshold for lib #0: 2.69948
+  0:00:39.647    16M / 5G    INFO    General                 (path_extend_launch.hpp    : 874)   Using 1 paired-end library
+  0:00:39.647    16M / 5G    INFO    General                 (path_extend_launch.hpp    : 875)   Using 1 paired-end scaffolding library
+  0:00:39.647    16M / 5G    INFO    General                 (path_extend_launch.hpp    : 876)   Using 0 mate-pair libraries
+  0:00:39.647    16M / 5G    INFO    General                 (path_extend_launch.hpp    : 877)   Using 0 single read libraries
+  0:00:39.647    16M / 5G    INFO    General                 (path_extend_launch.hpp    : 878)   Scaffolder is on
+  0:00:39.647    16M / 5G    INFO   PathExtendIO             (pe_io.hpp                 : 214)   Writing contigs to /Users/cmdb/qbb2016-answers/week2/spades_reads_high//K55/final_contigs
+  0:00:39.657    16M / 5G    INFO    General                 (path_extend_launch.hpp    : 263)   Traversing tandem repeats
+  0:00:39.657    16M / 5G    INFO   PathExtendIO             (pe_io.hpp                 : 214)   Writing contigs to /Users/cmdb/qbb2016-answers/week2/spades_reads_high//K55/scaffolds
+  0:00:39.666    16M / 5G    INFO    General                 (launch.hpp                : 121)   SPAdes finished
+  0:00:39.669    16M / 5G    INFO    General                 (main.cpp                  : 109)   Assembling time: 0 hours 0 minutes 39 seconds
+
+===== Assembling finished. Used k-mer sizes: 21, 33, 55 
+
+ * Assembled contigs are in /Users/cmdb/qbb2016-answers/week2/spades_reads_high/contigs.fasta
+ * Assembled scaffolds are in /Users/cmdb/qbb2016-answers/week2/spades_reads_high/scaffolds.fasta
+ * Assembly graph is in /Users/cmdb/qbb2016-answers/week2/spades_reads_high/assembly_graph.fastg
+ * Paths in the assembly graph corresponding to the contigs are in /Users/cmdb/qbb2016-answers/week2/spades_reads_high/contigs.paths
+ * Paths in the assembly graph corresponding to the scaffolds are in /Users/cmdb/qbb2016-answers/week2/spades_reads_high/scaffolds.paths
+
+======= SPAdes pipeline finished.
+
+SPAdes log can be found here: /Users/cmdb/qbb2016-answers/week2/spades_reads_high/spades.log
+
+Thank you for using SPAdes!

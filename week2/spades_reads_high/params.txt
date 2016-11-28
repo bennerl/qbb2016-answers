@@ -1,0 +1,31 @@
+Command line: /usr/local/bin/spades.py	-o	/Users/cmdb/qbb2016-answers/week2/spades_reads_high	--only-assembler	-1	/Users/cmdb/qbb2016-answers/week2/reads_1.fastq	-2	/Users/cmdb/qbb2016-answers/week2/reads_2.fastq	
+
+System information:
+  SPAdes version: 3.9.0
+  Python version: 2.7.12
+  OS: Darwin-15.6.0-x86_64-i386-64bit
+
+Output dir: /Users/cmdb/qbb2016-answers/week2/spades_reads_high
+Mode: ONLY assembling (without read error correction)
+Debug mode is turned OFF
+
+Dataset parameters:
+  Multi-cell mode (you should set '--sc' flag if input data was obtained with MDA (single-cell) technology or --meta flag if processing metagenomic dataset)
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/Users/cmdb/qbb2016-answers/week2/reads_1.fastq']
+      right reads: ['/Users/cmdb/qbb2016-answers/week2/reads_2.fastq']
+      interlaced reads: not specified
+      single reads: not specified
+Assembly parameters:
+  k: automatic selection based on read length
+  Repeat resolution is enabled
+  Mismatch careful mode is turned OFF
+  MismatchCorrector will be SKIPPED
+  Coverage cutoff is turned OFF
+Other parameters:
+  Dir for temp files: /Users/cmdb/qbb2016-answers/week2/spades_reads_high/tmp
+  Threads: 16
+  Memory limit (in Gb): 250
+

@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!DOCTYPE spamo[
+<!ELEMENT spamo (model, files, primary_motif, run_time)>
+<!ATTLIST spamo version CDATA #REQUIRED release CDATA #REQUIRED>
+<!ELEMENT model (command_line, seed, margin, bin_size,
+  bin_pvalue_calc_range, bin_pvalue_cutoff, seq_max_shared_fract,
+  seq_min_hit_score, redundant_overlap, redundant_joint,
+  motif_pseudocount, motif_trim, bin_max, host, when)>
+<!ELEMENT command_line (#PCDATA)>
+<!ELEMENT seed (#PCDATA)>
+<!ELEMENT margin (#PCDATA)>
+<!ELEMENT bin_size (#PCDATA)>
+<!ELEMENT bin_pvalue_calc_range (#PCDATA)>
+<!ELEMENT bin_pvalue_cutoff (#PCDATA)>
+<!ELEMENT seq_max_shared_fract (#PCDATA)>
+<!ELEMENT seq_min_hit_score (#PCDATA)>
+<!ELEMENT redundant_overlap (#PCDATA)>
+<!ELEMENT redundant_joint (#PCDATA)>
+<!ELEMENT motif_pseudocount (#PCDATA)>
+<!ELEMENT motif_trim (#PCDATA)>
+<!ELEMENT bin_max (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ELEMENT when (#PCDATA)>
+<!ELEMENT files (sequence_db, motif_db*)>
+<!ELEMENT sequence_db EMPTY>
+<!ATTLIST sequence_db name CDATA #REQUIRED loaded CDATA #REQUIRED
+  excluded_too_short CDATA #REQUIRED excluded_no_match CDATA #REQUIRED
+  excluded_similar CDATA #REQUIRED last_modified CDATA #REQUIRED
+  source CDATA #REQUIRED>
+<!ELEMENT motif_db EMPTY>
+<!ATTLIST motif_db id ID #REQUIRED name CDATA #REQUIRED
+  loaded CDATA #REQUIRED excluded CDATA #REQUIRED
+  last_modified CDATA #REQUIRED source CDATA #REQUIRED
+  cisml CDATA #IMPLIED>
+<!ELEMENT primary_motif (motif, secondary_motif*)>
+<!ELEMENT secondary_motif (spacing*, motif, histogram, redundant?)>
+<!ATTLIST secondary_motif evalue CDATA #REQUIRED>
+<!ELEMENT spacing EMPTY>
+<!ATTLIST spacing strand (same|opposite) #REQUIRED
+  side (left|right) #REQUIRED bin CDATA #REQUIRED num CDATA #REQUIRED
+  pvalue CDATA #REQUIRED>
+<!ELEMENT histogram (same_strand, opposite_strand)>
+<!ATTLIST histogram total CDATA #REQUIRED max CDATA #REQUIRED>
+<!ELEMENT same_strand (left_side, right_side)>
+<!ELEMENT opposite_strand (left_side, right_side)>
+<!ELEMENT left_side (bin*)>
+<!ELEMENT right_side (bin*)>
+<!ELEMENT bin EMPTY>
+<!-- i: index, n: number in bin, p: pvalue (only supplied when bin
+  is tested) -->
+<!ATTLIST bin i CDATA #REQUIRED n CDATA #REQUIRED p CDATA #IMPLIED>
+<!ELEMENT redundant (secondary_motif*)>
+<!-- motif contains the probability of each of the nucleotide bases at each
+  position; i starts at 1; A, C, G and T are probabilities that sum to 1 -->
+<!ELEMENT motif (pos*)>
+<!ATTLIST motif db IDREF #REQUIRED name CDATA #REQUIRED alt CDATA #IMPLIED 
+  length CDATA #REQUIRED nsites CDATA #IMPLIED evalue CDATA #IMPLIED
+  ltrim CDATA #IMPLIED rtrim CDATA #IMPLIED url CDATA #IMPLIED>
+<!ELEMENT pos EMPTY>
+<!ATTLIST pos i CDATA #REQUIRED A CDATA #REQUIRED C CDATA #REQUIRED
+  G CDATA #REQUIRED T CDATA #REQUIRED>
+<!-- run time is measured in real time and cpu time -->
+<!ELEMENT run_time EMPTY>
+<!ATTLIST run_time cpu CDATA #REQUIRED real CDATA #REQUIRED>
+]>
+<spamo version="4.10.1" release="Wed Mar 25 11:40:43 2015 +1000">
+  <model>
+    <command_line>spamo  -verbosity 1 -oc memechip_out/spamo_out_2 -bgfile memechip_out/background -primary 2 memechip_out/ER4_G1E_100.fasta memechip_out/meme_out/meme.xml memechip_out/meme_out/meme.xml memechip_out/dreme_out/dreme.xml motif_databases/JASPAR/JASPAR_CORE_2016.meme</command_line>
+    <seed>1</seed>
+    <margin>150</margin>
+    <bin_size>1</bin_size>
+    <bin_pvalue_calc_range>150</bin_pvalue_calc_range>
+    <bin_pvalue_cutoff>0.05</bin_pvalue_cutoff>
+    <motif_evalue_cutoff>10</motif_evalue_cutoff>
+    <seq_max_shared_fract>0.5</seq_max_shared_fract>
+    <seq_odds_ratio>20</seq_odds_ratio>
+    <seq_min_hit_score>7</seq_min_hit_score>
+    <redundant_overlap>2</redundant_overlap>
+    <redundant_joint>0.5</redundant_joint>
+    <motif_pseudocount>0.1</motif_pseudocount>
+    <motif_trim>0.25</motif_trim>
+    <bin_max>0</bin_max>
+    <host>bio-cmdb-14.local</host>
+    <when>Fri Oct 14 18:04:16 2016</when>
+  </model>
+  <files>
+    <sequence_db name="ER4 G1E 100" loaded="100" excluded_too_short="15"
+        excluded_no_match="76" excluded_similar="0" last_modified="Fri Oct 14 18:03:33 2016"
+        source="memechip_out/ER4_G1E_100.fasta"/>
+    <motif_db id="primary_file" name="meme.xml" loaded="2" excluded="1" last_modified="Fri Oct 14 18:03:56 2016"
+        source="memechip_out/meme_out/meme.xml"/>
+    <motif_db id="db1" name="meme.xml" loaded="3" excluded="1" last_modified="Fri Oct 14 18:03:56 2016"
+        source="memechip_out/meme_out/meme.xml"/>
+    <motif_db id="db2" name="dreme.xml" loaded="1" excluded="0" last_modified="Fri Oct 14 18:03:58 2016"
+        source="memechip_out/dreme_out/dreme.xml"/>
+    <motif_db id="db3" name="JASPAR CORE 2016" loaded="1082" excluded="0" last_modified="Wed Sep 14 14:58:14 2016"
+        source="motif_databases/JASPAR/JASPAR_CORE_2016.meme"/>
+  </files>
+  <primary_motif>
+    <motif db="primary_file" name="2" alt="MEME" length="20" nsites="16" evalue="1.1e-10" ltrim="0" rtrim="0" >
+      <pos i="1" A="0.0016236" C="0.746824" G="0.00148199" T="0.250071"/>
+      <pos i="2" A="0.0016236" C="0.871047" G="0.00148199" T="0.125847"/>
+      <pos i="3" A="0.0637354" C="0.746824" G="0.00148199" T="0.187959"/>
+      <pos i="4" A="0.0016236" C="0.0635938" G="0.00148199" T="0.933301"/>
+      <pos i="5" A="0.250071" C="0.00148199" G="0.684712" T="0.0637354"/>
+      <pos i="6" A="0.0637354" C="0.00148199" G="0.933159" T="0.0016236"/>
+      <pos i="7" A="0.871189" C="0.00148199" G="0.125706" T="0.0016236"/>
+      <pos i="8" A="0.498518" C="0.187817" G="0.312041" T="0.0016236"/>
+      <pos i="9" A="0.0016236" C="0.746824" G="0.249929" T="0.0016236"/>
+      <pos i="10" A="0.187959" C="0.00148199" G="0.125706" T="0.684853"/>
+      <pos i="11" A="0.0016236" C="0.00148199" G="0.995271" T="0.0016236"/>
+      <pos i="12" A="0.187959" C="0.125706" G="0.560488" T="0.125847"/>
+      <pos i="13" A="0.933301" C="0.00148199" G="0.0635938" T="0.0016236"/>
+      <pos i="14" A="0.187959" C="0.0635938" G="0.746824" T="0.0016236"/>
+      <pos i="15" A="0.187959" C="0.0635938" G="0.187817" T="0.56063"/>
+      <pos i="16" A="0.125847" C="0.249929" G="0.0635938" T="0.56063"/>
+      <pos i="17" A="0.498518" C="0.0635938" G="0.374153" T="0.0637354"/>
+      <pos i="18" A="0.125847" C="0.684712" G="0.125706" T="0.0637354"/>
+      <pos i="19" A="0.56063" C="0.00148199" G="0.00148199" T="0.436406"/>
+      <pos i="20" A="0.0637354" C="0.00148199" G="0.871047" T="0.0637354"/>
+    </motif>
+  </primary_motif>
+  <run_time cpu="2.2" real="3.0"/>
+</spamo>

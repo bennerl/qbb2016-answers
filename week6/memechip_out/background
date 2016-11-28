@@ -1,0 +1,24 @@
+# 1-order Markov frequencies
+# seqs: 100    min: 296    max: 635    avg: 405.8    sum: 40584
+# order 0
+A 2.614e-01
+C 2.386e-01
+G 2.386e-01
+T 2.614e-01
+# order 1
+AA 7.643e-02
+AC 5.345e-02
+AG 7.734e-02
+AT 5.414e-02
+CA 7.333e-02
+CC 6.755e-02
+CG 2.040e-02
+CT 7.734e-02
+GA 6.111e-02
+GC 5.657e-02
+GG 6.755e-02
+GT 5.345e-02
+TA 5.049e-02
+TC 6.111e-02
+TG 7.333e-02
+TT 7.643e-02

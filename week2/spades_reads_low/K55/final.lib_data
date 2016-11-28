@@ -1,0 +1,30 @@
+---
+- type:            paired-end
+  orientation:     fr
+  left reads:      
+    - /Users/cmdb/qbb2016-answers/week2/reads_low_1.fastq
+  right reads:     
+    - /Users/cmdb/qbb2016-answers/week2/reads_low_2.fastq
+  read length:     100
+  average read length: 93.3625
+  insert size mean: 215.595
+  insert size deviation: 10.4424
+  insert size left quantile: 202
+  insert size right quantile: 229
+  insert size median: 216
+  insert size mad: 8
+  insert size distribution: { 187: 1, 188: 1, 190: 1, 191: 1, 192: 1, 193: 2, 
+                              194: 2, 195: 3, 196: 1, 197: 1, 198: 1, 199: 3, 
+                              200: 5, 201: 7, 202: 6, 203: 5, 204: 11, 
+                              205: 9, 206: 11, 207: 13, 208: 6, 209: 3, 
+                              210: 7, 211: 20, 212: 9, 213: 12, 214: 14, 
+                              215: 10, 216: 16, 217: 11, 218: 9, 219: 8, 
+                              220: 14, 221: 9, 222: 8, 223: 6, 224: 9, 
+                              225: 11, 226: 8, 227: 13, 228: 9, 229: 8, 
+                              230: 6, 231: 10, 232: 2, 233: 2, 234: 4, 
+                              235: 1, 237: 4, 238: 1, 239: 1 }
+  average coverage: 1.32514
+  pi threshold:    0.0290256
+  binary converted: true
+  single reads mapped: false
+...

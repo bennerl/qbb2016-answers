@@ -1,0 +1,12 @@
+cp ~/data/fastq/SRR072893.fastq.gz ~/data/day1/
+gunzip ~/data/day1/SRR072893.fastq.gz
+fastqc ~/data/day1/SRR072893.fastq
+hisat2 -x ~/data/BDGP6/BDGP6 -p 4 -U ~/data/day1/SRR072893.fastq -S ~/data/day1/SRR072893.sam
+samtools view -bS ~/data/day1/SRR072893.sam -o ~/data/day1/SRR072893.bam
+samtools sort ~/data/day1/SRR072893.bam -o ~/data/day1/SRR072893.sorted.bam 
+samtools index -b ~/data/day1/SRR072893.sorted.bam 
+stringtie ~/data/day1/SRR072893.sorted.bam -p 4 -e -G ~/data/BDGP6/BDGP6.Ensembl.85.gtf -o ~/data/day1/SRR072893.gtf -B
+
+
+
+

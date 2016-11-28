@@ -1,0 +1,8 @@
+
+=== Error correction and assembling warnings:
+ * 0:00:01.335    16M / 5G    WARN    General                 (kmer_coverage_model.cpp   : 217)   Too many erroneous kmers, the estimates might be unreliable
+ * 0:00:01.399    16M / 5G    WARN    General                 (simplification.cpp        : 530)   The determined erroneous connection coverage threshold may be determined improperly
+ * 0:00:01.054    16M / 5G    WARN    General                 (kmer_coverage_model.cpp   : 343)   Valley value was estimated improperly, reset to 5
+ * 0:00:00.915    16M / 5G    WARN    General                 (kmer_coverage_model.cpp   : 343)   Valley value was estimated improperly, reset to 3
+ * 0:00:00.915    16M / 5G    WARN    General                 (kmer_coverage_model.cpp   : 382)   Failed to determine erroneous kmer threshold. Threshold set to: 3
+======= Warnings saved to /Users/cmdb/qbb2016-answers/week2/spades_reads_low/warnings.log

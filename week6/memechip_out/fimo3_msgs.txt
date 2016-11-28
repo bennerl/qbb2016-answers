@@ -1,0 +1,3 @@
+element a: validity error : ID occurrences_chr19_36883233_36883534 already defined
+element a: validity error : ID occurrences_chr19_27693649_27694183 already defined
+element a: validity error : ID occurrences_chr19_42655119_42655416 already defined

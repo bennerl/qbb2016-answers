@@ -1,0 +1,39 @@
+# DREME 4.10.1
+# command:   dreme -v 1 -oc memechip_out/dreme_out -p memechip_out/seqs-centered -n memechip_out/seqs-shuffled -png
+# host:      bio-cmdb-14.local
+# when:      Fri Oct 14 18:03:56 EDT 2016
+# positives: 100
+#      from: memechip_out/seqs-centered (Fri Oct 14 18:03:34 EDT 2016)
+# negatives: 100
+#      from: memechip_out/seqs-shuffled (Fri Oct 14 18:03:34 EDT 2016)
+
+
+MEME version 4.10.1
+
+ALPHABET= ACGT
+
+strands: + -
+
+Background letter frequencies (from dataset):
+A 0.237 C 0.260 G 0.250 T 0.253
+
+MOTIF AGAGGGCR DREME
+
+#             Word    RC Word        Pos        Neg    P-value    E-value
+# BEST    AGAGGGCR   YGCCCTCT         27          1   1.6e-008   2.4e-004
+#         AGAGGGCA   TGCCCTCT         17          1   3.7e-005   5.4e-001
+#         AGAGGGCG   CGCCCTCT         11          0   3.7e-004   5.3e+000
+
+letter-probability matrix: alength= 4 w= 8 nsites= 28 E= 2.4e-004
+1.000000 0.000000 0.000000 0.000000
+0.000000 0.000000 1.000000 0.000000
+1.000000 0.000000 0.000000 0.000000
+0.000000 0.000000 1.000000 0.000000
+0.000000 0.000000 1.000000 0.000000
+0.000000 0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000 0.000000
+0.607143 0.000000 0.392857 0.000000
+
+
+
+Time 1.52 secs.

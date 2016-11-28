@@ -1,0 +1,23 @@
+Fri Sep 16 17:54:59 2016
+ velveth /Users/cmdb/qbb2016-answers/week2/velvet_reads_low 31 -shortPaired -fastq -separate reads_low_1.fastq reads_low_2.fastq
+Version 1.2.10
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+LONGSEQUENCES
+
+Fri Sep 16 17:55:00 2016
+ velvetg /Users/cmdb/qbb2016-answers/week2/velvet_reads_low
+Version 1.2.10
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+LONGSEQUENCES
+
+Final graph has 306 nodes and n50 of 233, max 968, total 47835, using 0/2000 reads

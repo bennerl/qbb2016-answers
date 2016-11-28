@@ -1,0 +1,4 @@
+- left reads: [/Users/cmdb/qbb2016-answers/week2/reads_1.fastq]
+  orientation: fr
+  right reads: [/Users/cmdb/qbb2016-answers/week2/reads_2.fastq]
+  type: paired-end

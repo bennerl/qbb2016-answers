@@ -1,0 +1,41 @@
+Assembly	contigs_spades_high	contigs_spades_low	contigs_velvet_high	contigs_velvet_low
+# contigs (>= 0 bp)	1	128	16	305
+# contigs (>= 1000 bp)	1	4	7	0
+# contigs (>= 5000 bp)	1	0	7	0
+# contigs (>= 10000 bp)	1	0	4	0
+# contigs (>= 25000 bp)	1	0	1	0
+# contigs (>= 50000 bp)	1	0	0	0
+Total length (>= 0 bp)	100000	49819	100309	56973
+Total length (>= 1000 bp)	100000	5313	99584	0
+Total length (>= 5000 bp)	100000	0	99584	0
+Total length (>= 10000 bp)	100000	0	81134	0
+Total length (>= 25000 bp)	100000	0	33235	0
+Total length (>= 50000 bp)	100000	0	0	0
+# contigs	1	20	7	11
+Largest contig	100000	1737	33235	998
+Total length	100000	15923	99584	7243
+Reference length	4639675	4639675	4639675	4639675
+GC (%)	52.59	51.21	52.58	50.71
+Reference GC (%)	50.79	50.79	50.79	50.79
+N50	100000	718	19911	632
+N75	100000	635	13440	542
+L50	1	8	2	5
+L75	1	13	4	8
+# misassemblies	0	1	0	0
+# misassembled contigs	0	1	0	0
+Misassembled contigs length	0	1084	0	0
+# local misassemblies	0	0	0	0
+# unaligned contigs	0 + 0 part	0 + 0 part	0 + 0 part	0 + 0 part
+Unaligned length	0	0	0	0
+Genome fraction (%)	2.155	0.343	2.145	0.156
+Duplication ratio	1.000	1.000	1.001	1.000
+# N's per 100 kbp	0.00	0.00	0.00	0.00
+# mismatches per 100 kbp	0.00	31.40	0.00	0.00
+# indels per 100 kbp	0.00	0.00	0.00	0.00
+Largest alignment	100000	1737	33235	998
+Total aligned length	100000	15923	99584	7243
+NA50	100000	715	19911	632
+NGA50	-	-	-	-
+NA75	100000	587	13440	542
+LA50	1	8	2	5
+LA75	1	14	4	8
